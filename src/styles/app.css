@@ -15,4 +15,20 @@ h1 {
   font-family: VCR OSD Mono;
 }
 
+.greetings {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.greetings-box {
+  width: 20rem;
+  padding: 2rem;
+  border: 1px solid black;
+}
+
+.greetings-box-text span {
+  color: orange;
+}
+
 /*# sourceMappingURL=app.css.map */
