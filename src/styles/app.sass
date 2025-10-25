@@ -11,18 +11,54 @@
     padding: 0
     margin: 0
 
-h1
+.wraper
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+
+.navbar
+    display: flex
+    padding: 2rem 2rem 0 2rem
+    justify-content: space-between
+
+.navbar-logo
     font-family: VCR OSD Mono
+
+.navbar-menu
+    display: flex 
+    gap: 1rem
+    font-family: VCR OSD Mono
+    li
+        list-style: none
+        border: black solid 1px
+        padding: 0.7rem 1.4rem
+
+main
+    display: flex
+    justify-content: center
+    align-items: center
+    flex: 1
 
 .greetings
     display: flex
     flex-direction: column
-    gap: 0.6rem
+    gap: 1rem
 
 .greetings-box
     width: 20rem
     padding: 2rem
-    border: 1px solid black
+    border: 2px solid black
+    border-radius: 0.1px
+    box-shadow: 0 0 0 2px white, 0 0 0 4px black
+
+.greetings-title
+    display: flex
+    gap: 6.5rem
+    margin: 0 -0.3rem
+    font-family: VCR OSD Mono
+
+.greetings-title-number
+    color: orange
 
 .greetings-box-text
     span
