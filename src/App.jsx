@@ -9,9 +9,9 @@ function App() {
       <nav className='navbar'>
         <h1 className='navbar-logo'>CGC</h1>
         <ul className='navbar-menu'>
-          <li>Menu</li>
-          <li>Videos</li>
-          <li>Market</li>
+          <li>MENU</li>
+          <li>VIDEOS</li>
+          <li>MARKET</li>
         </ul>
       </nav>
       <main>
