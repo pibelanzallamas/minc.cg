@@ -1,21 +1,22 @@
 import './styles/app.css'
+import logo from "./assets/logo/CGCmincLogo.svg"
 
 function App() {
 
   return (
     <div className='wraper'>
-      {/* <nav className='navbar'>
-        <figure className='home-icon'>
-          <img src='../public/cgcMincLogos.svg'></img>
+      <nav className='navbar'>
+        <figure className='navbar-logotipo'>
+          <img src={logo} alt='cgcminic-logo'></img>
         </figure>
         <ul className='navbar-menu'>
-          <li className='navbar-menu-redbar'></li>
+          {/* <li className='navbar-menu-redbar'></li>
           <li className='navbar-menu-title'>MENU</li>
           <li className='navbar-menu-title'>VIDEOS</li>
-          <li className='navbar-menu-title'>MARKET</li>
+          <li className='navbar-menu-title'>MARKET</li> */}
         </ul>
       </nav>
-      <main>
+      {/*<main>
         <section className="greetings">
           <div className='greetings-title'>
             <div className='greetings-title-number'>00</div>

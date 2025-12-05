@@ -6,31 +6,15 @@
   font-style: normal;
   font-display: swap;
 }
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-.wraper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-image: url("../assets/bg/webBackgroundRework.png");
-  background-size: cover;
-  background-position: center;
-}
-
 .navbar {
   display: flex;
-  padding: 1rem 1rem 0 1rem;
+  padding: 1.5rem 1rem 1rem 1.5rem;
   justify-content: space-between;
 }
 
-.navbar-logo {
-  font-family: VCR OSD Mono;
-  color: white;
-  text-shadow: 0.2rem 0.2rem 0 #000000;
+.navbar-logotipo {
+  height: 4rem;
+  aspect-ratio: 296/150;
 }
 
 .navbar-menu {
@@ -60,6 +44,27 @@
   transform: translateY(-50%);
   border-radius: 1px;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 20%, transparent 50%), #CB2F22;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.wraper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("../assets/bg/webBackgroundRework.png");
+  background-size: cover;
+  background-position: center;
 }
 
 main {
@@ -102,16 +107,6 @@ main {
 }
 .greetings-box-text span {
   color: orange;
-}
-
-.home-icon {
-  width: 7rem;
-  height: auto;
-}
-
-img {
-  height: 100%;
-  width: 100%;
 }
 
 /*# sourceMappingURL=app.css.map */
