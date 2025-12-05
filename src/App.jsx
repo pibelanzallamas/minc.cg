@@ -1,17 +1,18 @@
-import { useState } from 'react'
 import './styles/app.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className='wraper'>
-      <nav className='navbar'>
-        <h1 className='navbar-logo'>CGC</h1>
+      {/* <nav className='navbar'>
+        <figure className='home-icon'>
+          <img src='../public/cgcMincLogos.svg'></img>
+        </figure>
         <ul className='navbar-menu'>
-          <li>MENU</li>
-          <li>VIDEOS</li>
-          <li>MARKET</li>
+          <li className='navbar-menu-redbar'></li>
+          <li className='navbar-menu-title'>MENU</li>
+          <li className='navbar-menu-title'>VIDEOS</li>
+          <li className='navbar-menu-title'>MARKET</li>
         </ul>
       </nav>
       <main>
@@ -27,7 +28,7 @@ function App() {
             </p>
           </div>
         </section>
-      </main>
+      </main> */}
     </div>
   )
 }
