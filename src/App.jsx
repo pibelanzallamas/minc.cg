@@ -1,21 +1,11 @@
 import './styles/app.css'
-import logo from "./assets/logo/CGCmincLogo.svg"
+import Navbar from './Navbar';
 
 function App() {
 
   return (
     <div className='wraper'>
-      <nav className='navbar'>
-        <figure className='navbar-logotipo'>
-          <img src={logo} alt='cgcminic-logo'></img>
-        </figure>
-        <ul className='navbar-menu'>
-          {/* <li className='navbar-menu-redbar'></li>
-          <li className='navbar-menu-title'>MENU</li>
-          <li className='navbar-menu-title'>VIDEOS</li>
-          <li className='navbar-menu-title'>MARKET</li> */}
-        </ul>
-      </nav>
+      <Navbar />
       {/*<main>
         <section className="greetings">
           <div className='greetings-title'>
@@ -34,4 +24,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
