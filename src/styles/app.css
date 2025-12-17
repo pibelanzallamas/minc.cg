@@ -34,6 +34,7 @@
 
 .menu-button {
   box-sizing: border-box;
+  text-decoration: none;
   padding: 0.6rem 1.8rem;
   background-color: #BF1622;
   border: none;
