@@ -5,9 +5,9 @@ import { Link, useLocation } from "react-router-dom";
 function Navbar() {
     const location = useLocation();
     const links = [
-    { to: "/programming", title: "Programming" },
-    { to: "/videos", title: "Videos" },
-    { to: "/market", title: "Market" },
+    { to: "/programming", title: "PROGRAMMING" },
+    { to: "/videos", title: "VIDEOS" },
+    { to: "/market", title: "MARKET" },
   ];
     const [clicked, setClicked] = useState(false);
     const [link, setLink] = useState("");
@@ -25,27 +25,30 @@ function Navbar() {
     return(
         <>
         <nav className='navbar'>
-            <Link to="/" className='navbar-logotipo'>
-                <img src={logo} alt='cgcminic-logo'></img>
-            </Link>
-           <a >
-
-          <button onClick={() => handleHambu()} href="#" className="menu-button">
-              MENU
-          </button>
-          </a>
+          <Link to="/" className='navbar-logotipo'>
+              <img src={logo} alt='cgcminic-logo'></img>
+          </Link>
+          <div className="navbar-menu-button">
+            <button onClick={() => handleHambu()} href="#" className="menu-button">
+                MENU
+            </button>
+          </div>
         </nav>
-        {/* <ul className={clicked ? "hambu" : "notHambu"}>
-        {links.length > 0 &&
-          links.map((ele, i) => (
-            <Link to={ele.to} onClick={() => setLink(ele.title)} key={i}>
-              {link == ele.title ? <u>{ele.title}</u> : ele.title}
-            </Link>
-          ))}
-        </ul> */}
-        <nav className='navbar-desktop'>
 
-        </nav>
+        <ul className={clicked ? "menu-open" : "menu-closed"}>
+          <div className="menu-options">
+          {links.map((ele, i) => (
+              <Link to={ele.to} className="menu-button" onClick={() => setLink(ele.title)} key={i}>
+              {ele.title}
+              </Link>
+            ))}
+          </div>
+          
+        </ul>
+
+        {/* <nav className='navbar-desktop'>
+
+        </nav> */}
       </>
     )
 }
