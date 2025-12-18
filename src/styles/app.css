@@ -8,9 +8,9 @@
 }
 .navbar {
   display: flex;
-  padding: 1.5rem 1rem 1rem 1.5rem;
+  padding: 1.5rem 0.9rem 0.5rem 1.5rem;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .navbar-logotipo {
@@ -19,68 +19,101 @@
 }
 
 .navbar-menu-button {
-  width: 10rem;
+  width: 9rem;
   display: flex;
   justify-content: center;
-}
-
-.menu-options {
-  width: 10rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  text-align: center;
-}
-
-.menu-button {
-  box-sizing: border-box;
-  text-decoration: none;
-  padding: 0.6rem 1.8rem;
-  background-color: #BF1622;
-  border: none;
-  font-family: "VCR OSD Mono";
-  font-size: 1rem;
-  box-shadow: 5px 8px 0 rgba(0, 0, 0, 0.65);
   cursor: pointer;
-  color: white;
-  border: 1px solid #1A1818;
-  transition: border-color 0.3s ease;
-  overflow: hidden;
+}
+.navbar-menu-button img {
+  width: 5rem;
+}
+
+.navbar-menu-button > * {
   position: relative;
-  text-shadow: 3px 2.4px 0 rgba(43, 5, 5, 0.9);
-  border-radius: 0.8px;
-}
-.menu-button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 10%;
-  background: #D17D7D;
-}
-.menu-button::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 5%;
-  background-color: #521B1B;
+  z-index: 1;
 }
 
-.menu-button:hover {
-  border: 1px solid white;
+.navbar-menu-line {
+  position: absolute;
+  margin-right: 0.3rem;
+  z-index: 0;
 }
-
-.menu-open {
-  display: flex;
-  justify-content: flex-end;
-  padding: 0rem 0.8rem;
+.navbar-menu-line img {
+  width: 0.4rem;
+  height: 10rem;
 }
 
 .menu-closed {
   display: none;
+}
+
+.extra-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.extra-menu-buttons-div {
+  margin-right: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  width: 9rem;
+  align-items: center;
+  gap: 1.1rem;
+  z-index: 1;
+}
+
+.navbar-extra-button {
+  width: 7rem;
+}
+
+.new-button-div {
+  position: relative;
+  z-index: 1;
+}
+
+.new-button {
+  position: absolute;
+  left: -2.7rem;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 2rem;
+  z-index: 0;
+}
+
+.home-mobile {
+  margin-top: 5rem;
+}
+
+.greetings-section {
+  width: 12rem;
+  margin: 0 auto;
+}
+
+.greetings-message {
+  position: relative;
+}
+.greetings-message figure {
+  position: absolute;
+  width: 1rem;
+  top: -0.4rem;
+  left: 0.1rem;
+}
+
+.home-white-bar {
+  margin-top: 2rem;
+  width: 16rem;
+}
+
+footer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.about-us-button {
+  margin-bottom: 3rem;
+  width: 7rem;
+  cursor: pointer;
 }
 
 * {
@@ -107,43 +140,7 @@ img {
 main {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex: 1;
-}
-
-.greetings {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  color: white;
-  text-shadow: 0.2rem 0.2rem 0 #000000;
-}
-
-.greetings-box {
-  width: 20rem;
-  padding: 2rem;
-  border: 2px solid black;
-  border-radius: 0.1px;
-  box-shadow: 0 0 0 2px white, 0 0 0 4px black;
-}
-
-.greetings-title {
-  display: flex;
-  gap: 6.5rem;
-  margin: 0 -0.3rem;
-  font-family: VCR OSD Mono;
-}
-
-.greetings-title-number {
-  color: orange;
-}
-
-.greetings-box-text {
-  font-family: Inter;
-  font-weight: 500;
-}
-.greetings-box-text span {
-  color: orange;
 }
 
 /*# sourceMappingURL=app.css.map */

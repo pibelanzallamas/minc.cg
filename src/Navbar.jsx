@@ -1,6 +1,12 @@
 import logo from "./assets/logo/CGCmincLogo.svg"
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import menuButton from "./assets/buttons/menuBttn@300x.png"
+import menuLine from "./assets/buttons/menuLine.svg"
+import pButton from "./assets/buttons/proBttn@300x.png"
+import vButton from "./assets/buttons/VidBttn@300x.png"
+import mButton from "./assets/buttons/markBttn@300x.png"
+import newButton from "./assets/buttons/new@300x.png"
 
 function Navbar() {
     const location = useLocation();
@@ -28,27 +34,35 @@ function Navbar() {
           <Link to="/" className='navbar-logotipo'>
               <img src={logo} alt='cgcminic-logo'></img>
           </Link>
-          <div className="navbar-menu-button">
-            <button onClick={() => handleHambu()} href="#" className="menu-button">
-                MENU
-            </button>
-          </div>
+
+          <figure className="navbar-menu-button">
+            <img onClick={()=>handleHambu()} src={menuButton}></img>
+            <figure  className={clicked ? "navbar-menu-line" : "menu-closed"}>
+              <img src={menuLine}></img>
+            </figure>  
+          </figure>
         </nav>
 
-        <ul className={clicked ? "menu-open" : "menu-closed"}>
-          <div className="menu-options">
-          {links.map((ele, i) => (
-              <Link to={ele.to} className="menu-button" onClick={() => setLink(ele.title)} key={i}>
-              {ele.title}
-              </Link>
-            ))}
-          </div>
+        <div className={clicked ? "extra-menu" : "menu-closed"}>
+          <ul className="extra-menu-buttons-div">
+            <figure className="navbar-extra-button">
+              <img src={pButton}></img>
+            </figure>
+            <figure className="navbar-extra-button">
+              <img src={vButton}></img>
+            </figure>
+            <figure className="navbar-extra-button new-button-div">
+              <img src={mButton}></img>
+              <figure className="new-button">
+                <img src={newButton}></img>
+              </figure>
+            </figure>
+            
+          </ul>
           
-        </ul>
+        </div>
+        
 
-        {/* <nav className='navbar-desktop'>
-
-        </nav> */}
       </>
     )
 }
