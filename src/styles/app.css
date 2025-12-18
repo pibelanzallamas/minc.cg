@@ -58,9 +58,9 @@
   flex-direction: column;
   width: 9rem;
   align-items: center;
-  position: fixed;
   gap: 1.1rem;
-  z-index: 1;
+  position: absolute;
+  z-index: 99;
 }
 
 .navbar-extra-button {
