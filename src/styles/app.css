@@ -58,6 +58,7 @@
   flex-direction: column;
   width: 9rem;
   align-items: center;
+  position: fixed;
   gap: 1.1rem;
   z-index: 1;
 }
@@ -81,7 +82,7 @@
 }
 
 .home-mobile {
-  margin-top: 5rem;
+  margin: auto;
 }
 
 .greetings-section {
