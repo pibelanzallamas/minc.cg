@@ -16,7 +16,6 @@ function Home() {
               <img src={greetings}></img>
             </figure>
           </div>
-          
           <figure className="home-white-bar">
             <img src={bar}></img>
           </figure> 
