@@ -102,6 +102,7 @@
   }
   .navbar-menu-desktop .navbar-extra-button {
     width: 9rem;
+    pointer: cursor;
   }
 }
 .greetings-message {
