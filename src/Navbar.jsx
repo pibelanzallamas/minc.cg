@@ -44,6 +44,9 @@ function Navbar() {
             </figure>
             <figure className="navbar-extra-button new-button-div">
               <img src={mButton}></img>
+              <figure className="new-button">
+                <img src={newButton}></img>
+              </figure>
             </figure>
           </ul>
 

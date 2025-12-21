@@ -102,7 +102,15 @@
   }
   .navbar-menu-desktop .navbar-extra-button {
     width: 9rem;
-    pointer: cursor;
+    cursor: pointer;
+  }
+  .navbar-menu-desktop .navbar-extra-button .new-button {
+    position: absolute;
+    left: 3.5rem;
+    top: 135%;
+    transform: translateY(-50%);
+    width: 2.3rem;
+    z-index: 0;
   }
 }
 .greetings-message {
