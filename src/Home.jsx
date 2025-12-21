@@ -7,6 +7,9 @@ import bar from "./assets/home/whiteBar@300x.png"
 function Home() {
     return(
       <main>
+        <figure className="home-figures">
+            <img src={""}></img>
+        </figure>
         <div className="home-mobile">
           <figure className="greetings-message">
             <img src={greetings}></img>
@@ -15,6 +18,9 @@ function Home() {
             <img src={bar}></img>
           </figure> 
         </div>
+        <figure className="home-figures">
+            <img src={""}></img>
+        </figure>
       </main>
     )
 }

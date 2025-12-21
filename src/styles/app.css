@@ -98,6 +98,10 @@
   }
   .navbar-menu-desktop {
     display: flex;
+    gap: 1rem;
+  }
+  .navbar-menu-desktop .navbar-extra-button {
+    width: 9rem;
   }
 }
 .greetings-message {
