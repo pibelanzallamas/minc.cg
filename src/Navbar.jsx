@@ -34,6 +34,18 @@ function Navbar() {
           <Link to="/" className='navbar-logotipo'>
               <img src={logo} alt='cgcminic-logo'></img>
           </Link>
+          
+          <ul className="navbar-menu-desktop">
+            <figure className="navbar-extra-button">
+              <img src={pButton}></img>
+            </figure>
+            <figure className="navbar-extra-button">
+              <img src={vButton}></img>
+            </figure>
+            <figure className="navbar-extra-button new-button-div">
+              <img src={mButton}></img>
+            </figure>
+          </ul>
 
           <figure className="navbar-menu-button">
             <img onClick={()=>handleHambu()} src={menuButton}></img>
@@ -57,12 +69,8 @@ function Navbar() {
                 <img src={newButton}></img>
               </figure>
             </figure>
-            
           </ul>
-          
         </div>
-        
-
       </>
     )
 }

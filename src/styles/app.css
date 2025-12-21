@@ -81,6 +81,25 @@
   z-index: 0;
 }
 
+.navba-menu-desktop, .navbar-menu-desktop {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .navbar {
+    display: flex;
+    padding: 1.5rem 1.2rem 0.5rem 3rem;
+  }
+  .navbar-logotipo {
+    height: 5rem;
+  }
+  .navbar-menu-button {
+    display: none;
+  }
+  .navbar-menu-desktop {
+    display: flex;
+  }
+}
 .greetings-message {
   width: 15.8rem;
   margin-top: 11rem;
@@ -91,6 +110,23 @@
   width: 16rem;
 }
 
+@media (min-width: 1000px) {
+  .greetings-message {
+    margin-top: 0rem;
+    width: 18rem;
+  }
+  .home-white-bar {
+    margin-top: 0rem;
+    width: 22rem;
+  }
+  .home-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+  }
+}
 footer {
   display: flex;
   align-content: center;
@@ -103,6 +139,11 @@ footer {
   cursor: pointer;
 }
 
+@media (min-width: 1000px) {
+  .about-us-button {
+    width: 7rem;
+  }
+}
 * {
   box-sizing: border-box;
   padding: 0;

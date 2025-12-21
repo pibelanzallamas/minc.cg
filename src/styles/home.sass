@@ -1,5 +1,3 @@
-.home-mobile
-
 .greetings-message
     width: 15.8rem
     margin-top: 11rem
@@ -7,3 +5,19 @@
 .home-white-bar
     margin-top: 1.3rem
     width: 16rem
+
+@media (min-width: 1000px)
+    .greetings-message
+        margin-top: 0rem
+        width: 18rem
+
+    .home-white-bar
+        margin-top: 0rem
+        width: 22rem
+
+    .home-mobile
+        display: flex 
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        gap: 4.5rem
