@@ -1,9 +1,21 @@
-function Videos() {
+import VideoCard from './Commons/VideoCard'
+import videos from "./utils/videos.js"
 
+function Videos() {
+ 
   return (
-    <div>
+    <main className="videos-page">
+      <div className="video-title-text">
+        <h2>VIDEOS</h2>
+      </div>
+
+      <section className="videos">
+       {videos.map((e)=>(
+          <VideoCard videoData={e} />
+       ))}
+      </section>
       
-    </div>
+    </main>
   )
 }
 

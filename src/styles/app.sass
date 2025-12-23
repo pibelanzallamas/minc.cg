@@ -5,6 +5,20 @@
   font-style: normal
   font-display: swap
 
+@font-face
+  font-family: 'Questiora'
+  src: url('../assets/fonts/QuestioraRegular-Wpa9G.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'Tahoma'
+  src: url('../assets/fonts/Tahoma Regular font.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+  font-display: swap
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap')
 
 @import './navbar'
@@ -26,7 +40,7 @@ img
     display: flex
     flex-direction: column
     min-height: 100dvh
-    background-image: url("../assets/images/websiteBackground.png")
+    background-image: url("../assets/bg/webBackgroundRework.webp")
     background-size: cover
     background-position: center
 
@@ -36,3 +50,7 @@ main
     display: flex
     justify-content: center
     flex: 1
+
+@media (min-width: 1000px)
+  .wraper
+    background-image: url("../assets/bg/websiteBackground.webp")
