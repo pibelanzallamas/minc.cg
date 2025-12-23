@@ -13,18 +13,12 @@ import boxSel from "./assets/buttons/oneBoxSelected.png"
 
 
 function Navbar() {
-    const location = useLocation();
     const [extraMenu, setExtraMenu] = useState(false);
-
-    const handleHambu = () => {
-        setExtraMenu(!extraMenu);
-    };
-
 
     return(
         <>
         <nav className='navbar'>
-          <Link to="/" className='navbar-logotipo'>
+          <Link to="/" className='navbar-logotipo' onClick={()=>setExtraMenu(false)}>
               <img src={logo} alt='cgcminic-logo'></img>
           </Link>
           
@@ -47,7 +41,7 @@ function Navbar() {
           </figure>
           
           <figure className="navbar-menu-button">
-            <img onClick={()=>handleHambu()} src={menuButton}></img>
+            <img onClick={()=>setExtraMenu(!extraMenu)} src={menuButton}></img>
             <figure  className={extraMenu ? "navbar-menu-line" : "menu-closed"}>
               <img src={menuLine}></img>
             </figure>  
@@ -57,19 +51,19 @@ function Navbar() {
 
         <div className={extraMenu ? "extra-menu" : "menu-closed"}>
           <ul className="extra-menu-buttons-div">
-            <Link to={"/programming"}>
+            <Link to={"/programming"} onClick={()=>setExtraMenu(!extraMenu)}>
               <figure className="navbar-extra-button">
                 <img src={pButton}></img>
               </figure>
             </Link>
 
-            <Link to={"/videos"}>
+            <Link to={"/videos"} onClick={()=>setExtraMenu(!extraMenu)}>
               <figure className="navbar-extra-button">
                 <img src={vButton}></img>
               </figure>
             </Link>
 
-            <Link to={"/market"}>
+            <Link to={"/market"} onClick={()=>setExtraMenu(!extraMenu)}>
               <figure className="navbar-extra-button new-button-div">
                 <img src={mButton}></img>
                 <figure className="new-button">
