@@ -81,14 +81,14 @@
   z-index: 0;
 }
 
-.navba-menu-desktop, .navbar-menu-desktop {
+.navbar-menu-desktop, .menu-desktop-bar {
   display: none;
 }
 
 @media (min-width: 1000px) {
   .navbar {
     display: flex;
-    padding: 1.5rem 1.2rem 0.5rem 3rem;
+    padding: 2.4rem 3rem 0.5rem 3.8rem;
   }
   .navbar-logotipo {
     height: 5rem;
@@ -112,6 +112,38 @@
     width: 2.3rem;
     z-index: 0;
   }
+  .extra-menu-buttons-div, .navbar-menu-button {
+    display: none;
+  }
+  .menu-desktop-bar {
+    display: flex;
+    width: 37.4rem;
+    transform: translate(0, 0.7rem);
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .menu-desktop-bar .menu-bar {
+    filter: drop-shadow(0.5rem 0.5rem 0 rgba(0, 0, 0, 0.5));
+  }
+  .menu-desktop-box {
+    position: absolute;
+    z-index: 0;
+    width: 8.2rem;
+    top: -0.4rem;
+    left: 2.3rem;
+    filter: drop-shadow(0.5rem 0.5rem 0 rgba(0, 0, 0, 0.5));
+    cursor: pointer;
+  }
+  .menu-desktop-box .box-selected {
+    opacity: 0;
+  }
+  .menu-desktop-box .box:hover {
+    opacity: 0;
+  }
+  .menu-desktop-box .box-selected:hover {
+    opacity: 100;
+  }
 }
 .greetings-message {
   width: 15.8rem;
@@ -123,14 +155,18 @@
   width: 16rem;
 }
 
+.home-figures {
+  display: none;
+}
+
 @media (min-width: 1000px) {
   .greetings-message {
-    margin-top: 0rem;
-    width: 18rem;
+    margin-top: 1.6rem;
+    width: 21rem;
   }
   .home-white-bar {
     margin-top: 0rem;
-    width: 22rem;
+    width: 23rem;
   }
   .home-mobile {
     display: flex;
@@ -138,6 +174,16 @@
     align-items: center;
     justify-content: center;
     gap: 4.5rem;
+  }
+  .home-figures {
+    display: flex;
+    height: 31rem;
+  }
+  .figure-a {
+    transform: translate(-5rem, -15px);
+  }
+  .figure-b {
+    transform: translate(6rem, 9rem);
   }
 }
 footer {
@@ -154,7 +200,7 @@ footer {
 
 @media (min-width: 1000px) {
   .about-us-button {
-    width: 7rem;
+    width: 6.5rem;
   }
 }
 * {
@@ -173,7 +219,7 @@ img {
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
-  background-image: url("../assets/bg/webBackgroundRework.png");
+  background-image: url("../assets/images/websiteBackground.png");
   background-size: cover;
   background-position: center;
 }

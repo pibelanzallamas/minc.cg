@@ -1,14 +1,15 @@
-import greetings from "./assets/home/greetings@300x.png"
-import oo from "./assets/home/00@300x.png"
+import greetings from "./assets/home/greetings.png"
 import bar from "./assets/home/whiteBar@300x.png"
+import leftCharacter from "./assets/home/characterLeft.png"
+import rightCharacter from "./assets/home/characterRight.png"
 
 
 
 function Home() {
     return(
       <main>
-        <figure className="home-figures">
-            <img src={""}></img>
+        <figure className="home-figures figure-a">
+            <img src={leftCharacter}></img>
         </figure>
         <div className="home-mobile">
           <figure className="greetings-message">
@@ -18,8 +19,8 @@ function Home() {
             <img src={bar}></img>
           </figure> 
         </div>
-        <figure className="home-figures">
-            <img src={""}></img>
+        <figure className="home-figures figure-b">
+            <img src={rightCharacter}></img>
         </figure>
       </main>
     )

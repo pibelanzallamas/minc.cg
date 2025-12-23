@@ -7,26 +7,19 @@ import pButton from "./assets/buttons/proBttn@300x.png"
 import vButton from "./assets/buttons/VidBttn@300x.png"
 import mButton from "./assets/buttons/markBttn@300x.png"
 import newButton from "./assets/buttons/new@300x.png"
+import menuBar from "./assets/buttons/menuBar.png"
+import box from "./assets/buttons/oneBox.png"
+import boxSel from "./assets/buttons/oneBoxSelected.png"
+
 
 function Navbar() {
     const location = useLocation();
-    const links = [
-    { to: "/programming", title: "PROGRAMMING" },
-    { to: "/videos", title: "VIDEOS" },
-    { to: "/market", title: "MARKET" },
-  ];
-    const [clicked, setClicked] = useState(false);
-    const [link, setLink] = useState("");
+    const [extraMenu, setExtraMenu] = useState(false);
 
     const handleHambu = () => {
-        setClicked(!clicked);
+        setExtraMenu(!extraMenu);
     };
 
-    useEffect(() => {
-        if (location.pathname == "/") {
-            setLink("");
-        }
-    }, [location]);
 
     return(
         <>
@@ -35,45 +28,58 @@ function Navbar() {
               <img src={logo} alt='cgcminic-logo'></img>
           </Link>
           
-          <ul className="navbar-menu-desktop">
-            <figure className="navbar-extra-button">
-              <img src={pButton}></img>
+          <figure className="menu-desktop-bar">
+            <img className="menu-bar" src={menuBar}></img>
+            <figure className="menu-desktop-box">
+              {/* <Link to={"/programming"}>
+                <img className="box" src={box} alt="" />
+                <img className="box-selected" src={boxSel} alt="" />
+              </Link>
+              <Link to={"/videos"}>
+                <img className="box" src={box} alt="" />
+                <img className="box-selected" src={boxSel} alt="" />
+              </Link>
+              <Link to={"/market"}>
+                <img className="box" src={box} alt="" />
+                <img className="box-selected" src={boxSel} alt="" />
+              </Link> */}
             </figure>
-            <figure className="navbar-extra-button">
-              <img src={vButton}></img>
-            </figure>
-            <figure className="navbar-extra-button new-button-div">
-              <img src={mButton}></img>
-              <figure className="new-button">
-                <img src={newButton}></img>
-              </figure>
-            </figure>
-          </ul>
-
+          </figure>
+          
           <figure className="navbar-menu-button">
             <img onClick={()=>handleHambu()} src={menuButton}></img>
-            <figure  className={clicked ? "navbar-menu-line" : "menu-closed"}>
+            <figure  className={extraMenu ? "navbar-menu-line" : "menu-closed"}>
               <img src={menuLine}></img>
             </figure>  
           </figure>
+
         </nav>
 
-        <div className={clicked ? "extra-menu" : "menu-closed"}>
+        <div className={extraMenu ? "extra-menu" : "menu-closed"}>
           <ul className="extra-menu-buttons-div">
-            <figure className="navbar-extra-button">
-              <img src={pButton}></img>
-            </figure>
-            <figure className="navbar-extra-button">
-              <img src={vButton}></img>
-            </figure>
-            <figure className="navbar-extra-button new-button-div">
-              <img src={mButton}></img>
-              <figure className="new-button">
-                <img src={newButton}></img>
+            <Link to={"/programming"}>
+              <figure className="navbar-extra-button">
+                <img src={pButton}></img>
               </figure>
-            </figure>
+            </Link>
+
+            <Link to={"/videos"}>
+              <figure className="navbar-extra-button">
+                <img src={vButton}></img>
+              </figure>
+            </Link>
+
+            <Link to={"/market"}>
+              <figure className="navbar-extra-button new-button-div">
+                <img src={mButton}></img>
+                <figure className="new-button">
+                  <img src={newButton}></img>
+                </figure>
+              </figure>
+            </Link>
           </ul>
         </div>
+
       </>
     )
 }

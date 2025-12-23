@@ -60,13 +60,13 @@
     width: 2rem
     z-index: 0
 
-.navba-menu-desktop, .navbar-menu-desktop
+.navbar-menu-desktop, .menu-desktop-bar
     display: none
 
 @media (min-width: 1000px)
     .navbar
         display: flex
-        padding: 1.5rem 1.2rem 0.5rem 3rem
+        padding: 2.4rem 3rem 0.5rem 3.8rem
     .navbar-logotipo
         height: 5rem
 
@@ -88,5 +88,29 @@
 
     .extra-menu-buttons-div, .navbar-menu-button
         display: none
+
+    .menu-desktop-bar
+        display: flex
+        width: 37.4rem
+        transform: translate(0, 0.7rem)
+        position: relative
+        z-index: 1
+        cursor: pointer
+        .menu-bar
+            filter: drop-shadow(0.5rem 0.5rem 0 rgba(0, 0, 0, 0.5))
         
+    .menu-desktop-box
+        position: absolute
+        z-index: 0
+        width: 8.2rem
+        top:  -0.4rem
+        left: 2.3rem
+        filter: drop-shadow(0.5rem 0.5rem 0 rgba(0, 0, 0, 0.5))
+        cursor: pointer
+        .box-selected
+            opacity: 0
+        .box:hover
+            opacity: 0
+        .box-selected:hover
+            opacity: 100
 
