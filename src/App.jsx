@@ -4,6 +4,8 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Home from './Home';
 import Videos from './Videos'
+import Programming from './Programming'
+import Market from './Market'
 
 function App() {
 
@@ -13,6 +15,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/videos" element={<Videos />} />
+        <Route path="/programming" element={<Programming/>}/>
+        <Route path="/market" element={<Market/>}/>
       </Routes>
       <Footer/>
     </div>

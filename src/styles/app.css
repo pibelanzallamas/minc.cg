@@ -137,9 +137,6 @@
     z-index: 1;
     cursor: pointer;
   }
-  .menu-desktop-bar .menu-bar {
-    filter: drop-shadow(0.5rem 0.5rem 0 rgba(0, 0, 0, 0.5));
-  }
   .menu-desktop-box {
     position: absolute;
     z-index: 0;
@@ -149,14 +146,14 @@
     filter: drop-shadow(0.5rem 0.5rem 0 rgba(0, 0, 0, 0.5));
     cursor: pointer;
   }
-  .menu-desktop-box .box-selected {
-    opacity: 0;
+  .box-selected {
+    display: none;
   }
-  .menu-desktop-box .box:hover {
-    opacity: 0;
+  .box-link:hover .box-selected {
+    display: block;
   }
-  .menu-desktop-box .box-selected:hover {
-    opacity: 100;
+  .box-link:hover .box-normal {
+    display: none;
   }
 }
 .greetings-message {
@@ -237,7 +234,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   width: 100%;
-  gap: 1rem;
+  row-gap: 1rem;
 }
 
 .video-card-box {
@@ -245,12 +242,25 @@ footer {
   flex-direction: column;
   gap: 0.6rem;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   width: 100%;
-  border: 1px solid red;
 }
-.video-card-box figure {
-  width: 3rem;
+.video-card-box .image-video {
+  width: 4rem;
+}
+.video-card-box .title-video {
+  width: 7rem;
+}
+.video-card-box p {
+  display: inline-block;
+  font-family: "Arial";
+  color: white;
+  text-shadow: 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.5);
+  width: 30ch;
+  height: 40px;
+  font-size: 0.5rem;
+  text-align: justify;
+  text-align-last: center;
 }
 
 * {
@@ -269,6 +279,7 @@ img {
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
+  overflow: hidden;
   background-image: url("../assets/bg/webBackgroundRework.webp");
   background-size: cover;
   background-position: center;

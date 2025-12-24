@@ -96,8 +96,6 @@
         position: relative
         z-index: 1
         cursor: pointer
-        .menu-bar
-            filter: drop-shadow(0.5rem 0.5rem 0 rgba(0, 0, 0, 0.5))
         
     .menu-desktop-box
         position: absolute
@@ -107,10 +105,12 @@
         left: 2.3rem
         filter: drop-shadow(0.5rem 0.5rem 0 rgba(0, 0, 0, 0.5))
         cursor: pointer
-        .box-selected
-            opacity: 0
-        .box:hover
-            opacity: 0
-        .box-selected:hover
-            opacity: 100
 
+    .box-selected
+      display: none
+
+    .box-link:hover .box-selected
+      display: block
+
+    .box-link:hover .box-normal
+      display: none

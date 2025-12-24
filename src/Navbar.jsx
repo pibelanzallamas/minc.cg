@@ -24,8 +24,8 @@ function Navbar() {
           
           <figure className="menu-desktop-bar">
             <img className="menu-bar" src={menuBar}></img>
-            <figure className="menu-desktop-box">
-              {/* <Link to={"/programming"}>
+            {/* <figure className="menu-desktop-box">
+              <Link to={"/programming"} className="box-link">
                 <img className="box" src={box} alt="" />
                 <img className="box-selected" src={boxSel} alt="" />
               </Link>
@@ -36,8 +36,8 @@ function Navbar() {
               <Link to={"/market"}>
                 <img className="box" src={box} alt="" />
                 <img className="box-selected" src={boxSel} alt="" />
-              </Link> */}
-            </figure>
+              </Link>
+            </figure> */}
           </figure>
           
           <figure className="navbar-menu-button">

@@ -2,15 +2,16 @@ function VideoCard({videoData}){
 
   return(
     <div className="video-card-box">
-      <figure>
+      <figure className="image-video">
         <img src={videoData.image}/>
       </figure>
-     <figure>
+
+     <figure className="title-video">
         <img src={videoData.title}/>
       </figure>
-      <figure>
-        <img src={videoData.desc}/>
-      </figure>
+      <div className="text-video">
+        <p>{videoData.desc}</p>
+      </div>
     </div>
 
   )
