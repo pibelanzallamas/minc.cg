@@ -5,13 +5,15 @@ function VideoCard({videoData}){
       <figure className="image-video">
         <img src={videoData.image}/>
       </figure>
-
-     <figure className="title-video">
-        <img src={videoData.title}/>
-      </figure>
-      <div className="text-video">
-        <p>{videoData.desc}</p>
-      </div>
+      
+        <a href={videoData.link} target="_blank">
+          <figure className="title-video">
+            <img src={videoData.title}/>
+          </figure>
+        </a>
+        <div className="text-video">
+          <p>{videoData.desc}</p>
+        </div>
     </div>
 
   )

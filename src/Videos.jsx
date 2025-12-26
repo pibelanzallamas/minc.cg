@@ -1,13 +1,14 @@
 import VideoCard from './Commons/VideoCard'
 import videos from "./utils/videos.js"
+import videoTit from "./assets/videos/title.png"
 
 function Videos() {
  
   return (
     <main className="videos-page">
-      <div className="video-title-text">
-        <h2>VIDEOS</h2>
-      </div>
+      <figure className="video-title-text">
+        <img src={videoTit} alt="video-title" />
+      </figure>
 
       <section className="videos">
        {videos.map((e)=>(

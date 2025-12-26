@@ -5,13 +5,8 @@
   align-items: center
   justify-content: flex-start
   
-  
 .video-title-text
-  font-size: 0.5rem
-  font-family: Inter
-  color: white
-  text-decoration: underline
-  text-shadow: 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.5)
+  width: 4.5rem
 
 .videos
   display: grid
@@ -22,15 +17,20 @@
 .video-card-box
   display: flex
   flex-direction: column
-  gap: 0.6rem
   align-items: center
-  justify-content: flex-end
+  // justify-content: flex-end
   width: 100%
+  border: 1px solid red
   .image-video
     width: 4rem
+    border: 1px solid red
   .title-video
+    border: 1px solid red
+    margin-top: 0.7rem
     width: 7rem
   p
+    border: 1px solid red
+    margin-top: 0.4rem
     display: inline-block
     font-family: 'Arial'
     color: white
@@ -38,7 +38,27 @@
     width: 30ch
     height: 40px
     font-size: 0.5rem
-    text-align: justify
-    text-align-last: center
+    text-align: center
+    // text-align-last: center
   
+.video-card-box:nth-child(2)
+  .image-video
+    width: 5rem 
 
+
+
+@media (min-width: 1000px)
+  .videos
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    width: 100%
+    row-gap: 1rem
+    column-gap: 3rem
+  .video-card-box
+    gap: 1rem
+    .image-video
+      width: 10rem
+    .title-video
+      width: 12rem
+    p
+      font-size: 1rem
