@@ -49,7 +49,7 @@ export const videos = [
   {
     image: img6,
     title: tit6,
-    desc: "The mind (software) / The body (hardware)",
+    desc: "The mind (software) / The body (hardware).",
     link: "https://www.youtube.com/watch?v=HduwPC2gnWQ"
   },
   {

@@ -5,8 +5,8 @@ import videoTit from "./assets/videos/title.png"
 function Videos() {
  
   return (
-    <main className="videos-page">
-      <figure className="video-title-text">
+    <main className="content-page">
+      <figure className="content-title-text">
         <img src={videoTit} alt="video-title" />
       </figure>
 

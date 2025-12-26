@@ -214,21 +214,21 @@ footer {
     width: 6.5rem;
   }
 }
-.videos-page {
+.content-page {
   flex-direction: column;
   gap: 1.4rem;
   padding: 1rem;
   align-items: center;
 }
 
-.video-title-text {
-  width: 4.5rem;
+.content-title-text {
+  width: 4rem;
 }
 
 .videos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 1.5rem;
   margin-bottom: 0.2rem;
 }
 
@@ -239,7 +239,8 @@ footer {
 }
 
 .image-video {
-  height: 5rem;
+  height: 4rem;
+  width: 4rem;
 }
 .image-video img {
   object-fit: contain;
@@ -272,6 +273,13 @@ footer {
   text-shadow: 0.13rem 0.14rem 0 rgba(0, 0, 0, 0.9);
   text-align: center;
   margin-top: 0.4rem;
+}
+
+.market {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 0.2rem;
 }
 
 * {
