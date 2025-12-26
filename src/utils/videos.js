@@ -38,7 +38,7 @@ export const videos = [
     image: img4,
     title: tit4,
     desc: "The importance of shared information and it's impact on humanity on an individual and global scale.",
-    link: "https://youtu.be/Zu_-DoPFFuU?si=usIdR3D9kF0Gs3sO"
+    link: "https://www.youtube.com/watch?v=Zu_-DoPFFuU"
   },
   {
     image: img5,
