@@ -15,7 +15,6 @@ function Videos() {
           <VideoCard videoData={e} />
        ))}
       </section>
-      
     </main>
   )
 }

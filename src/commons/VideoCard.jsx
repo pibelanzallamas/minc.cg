@@ -6,18 +6,14 @@ function VideoCard({videoData}){
     <div className="video-card-box">
       <figure className="image-video">
         <img src={videoData.image}/>
-        {videoData.link=="https://www.youtube.com/watch?v=mKruZdXavMk"
-        ? <div className="shoe-diver"> 
-            <img className="nike-shoe" src={nikeShoe}/>
-          </div>
-        :<></>}
+        {videoData.link=="https://www.youtube.com/watch?v=mKruZdXavMk"? <div className="zapatito">  <img src={nikeShoe}/> </div>:<></>}
       </figure>
       
-      <a href={videoData.link} target="_blank">
-        <figure className="title-video">
+      <figure className="title-video">
+        <a href={videoData.link} target="_blank">
           <img src={videoData.title}/>
-        </figure>
-      </a>
+        </a>
+      </figure>
 
       <div className="text-video">
         <p>{videoData.desc}</p>
