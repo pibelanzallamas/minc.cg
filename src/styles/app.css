@@ -277,6 +277,23 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  width: 100%;
+}
+
+.description-box {
+  width: 12rem;
+}
+
+.view-cart {
+  width: 3.2rem;
+}
+
+.item-card {
+  border: 1px solid red;
+}
+
+.item-image {
+  width: 2rem;
 }
 
 * {
@@ -312,9 +329,9 @@ main {
 
 .content-page {
   flex-direction: column;
-  gap: 1.4rem;
-  padding: 1rem;
   align-items: center;
+  padding: 1rem;
+  gap: 1rem;
 }
 
 .content-title-text {

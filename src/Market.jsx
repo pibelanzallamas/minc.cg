@@ -3,6 +3,7 @@ import marketTitle from "./assets/market/marketTitle.png"
 import {market} from "./utils/market.js"
 import descriptionBox from "./assets/market/descriptBox.png"
 import viewCart from "./assets/market/viewCart.png"
+import { Link } from 'react-router-dom'
 
 function Market(){
   return(
@@ -15,9 +16,11 @@ function Market(){
         <figure className="description-box">
           <img src={descriptionBox} alt="market-title" />
         </figure>
-        <figure className="view-cart">
-          <img src={viewCart} alt="market-title" />
-        </figure>
+        <Link to={"/"}>
+          <figure className="view-cart">
+            <img src={viewCart} alt="market-title" />
+          </figure>
+        </Link>
       </section>
 
       <section className="market">
