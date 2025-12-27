@@ -303,8 +303,11 @@ img {
 
 main {
   display: flex;
-  justify-content: center;
   flex: 1;
+}
+
+.welcome-page {
+  justify-content: center;
 }
 
 .content-page {
@@ -315,7 +318,6 @@ main {
 }
 
 .content-title-text {
-  border: 1px solid red;
   width: 4rem;
 }
 

@@ -2,8 +2,9 @@ import VideoCard from './commons/VideoCard.jsx'
 import videos from "./utils/videos.js"
 import videoTit from "./assets/videos/title.png"
 
+
+
 function Videos() {
- 
   return (
     <main className="content-page">
       <figure className="content-title-text">

@@ -7,7 +7,7 @@ import rightCharacter from "./assets/home/characterRight.png"
 
 function Home() {
     return(
-      <main>
+      <main className="welcome-page">
         <figure className="home-figures figure-a">
             <img src={leftCharacter}></img>
         </figure>
