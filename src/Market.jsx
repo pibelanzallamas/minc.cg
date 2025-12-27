@@ -1,6 +1,6 @@
 import ItemCard from './commons/ItemCard.jsx'
 import marketTitle from "./assets/market/marketTitle.png"
-import {market} from "./utils/market.js"
+// import {market} from "./utils/market.js"
 import descriptionBox from "./assets/market/descriptBox.png"
 import viewCart from "./assets/market/viewCart.png"
 import { Link } from 'react-router-dom'
@@ -24,9 +24,9 @@ function Market(){
       </section>
 
       <section className="market">
-        {market.map((e)=>(
+        {/* {market.map((e)=>(
           <ItemCard itemData={e} />
-        ))}
+        ))} */}
       </section>
     </main>
   )
