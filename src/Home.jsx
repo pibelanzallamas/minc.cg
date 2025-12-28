@@ -3,8 +3,6 @@ import bar from "./assets/home/whiteBar@300x.png"
 import leftCharacter from "./assets/home/characterLeft.png"
 import rightCharacter from "./assets/home/characterRight.png"
 
-
-
 function Home() {
     return(
       <main className="welcome-page">
