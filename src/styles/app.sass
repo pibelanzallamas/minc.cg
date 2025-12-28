@@ -21,7 +21,7 @@
 
 @font-face
   font-family: 'Arial'
-  src: url('../assets/fonts/arial_narrow.ttf') format('truetype')
+  src: url('../assets/fonts/ARIAL.TTF') format('truetype')
   font-weight: normal
   font-style: normal
   font-display: swap
@@ -52,7 +52,9 @@ img
   overflow: hidden
   background-image: url("../assets/bg/webBackgroundRework.webp")
   background-size: cover
-  background-position: center
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 
 main
   display: flex
@@ -69,7 +71,7 @@ main
   
 .content-title-text
   width: 4rem
-  // width: 4.5rem
+  width: 4.5rem
 
 @media (min-width: 1000px)
   .wraper

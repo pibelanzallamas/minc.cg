@@ -22,7 +22,7 @@
 }
 @font-face {
   font-family: "Arial";
-  src: url("../assets/fonts/arial_narrow.ttf") format("truetype");
+  src: url("../assets/fonts/ARIAL.TTF") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -35,7 +35,7 @@
 }
 
 .navbar-logotipo {
-  height: 4rem;
+  height: 3rem;
   aspect-ratio: 296/150;
 }
 
@@ -292,38 +292,50 @@ footer {
 .market {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 0.6rem;
   width: 100%;
   margin-bottom: 0.2rem;
   padding: 1rem;
+  row-gap: 2rem;
 }
 
 .item-card {
   width: 100%;
-  height: 10rem;
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
   justify-content: space-between;
+  height: 11rem;
 }
 
 .item-image {
   align-self: flex-start;
+  height: 6rem;
   aspect-ratio: 513/665;
-  height: 4.5rem;
 }
 
 .item-info {
-  margin-top: 0.4rem;
   color: white;
   font-family: "Arial";
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   text-shadow: 0.13rem 0.14rem 0 rgba(0, 0, 0, 0.9);
 }
 
+.item-title {
+  width: 5.1rem;
+}
+
 .item-description {
+  margin-top: 0.5rem;
   display: flex;
   justify-content: space-between;
   width: 4.75rem;
+}
+
+.raffle-ticket {
+  font-family: VCR OSD Mono;
+  color: #FEF001;
+  font-size: 0.46rem;
 }
 
 .item-price {
@@ -354,7 +366,9 @@ img {
   overflow: hidden;
   background-image: url("../assets/bg/webBackgroundRework.webp");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
 }
 
 main {
@@ -375,6 +389,7 @@ main {
 
 .content-title-text {
   width: 4rem;
+  width: 4.5rem;
 }
 
 @media (min-width: 1000px) {

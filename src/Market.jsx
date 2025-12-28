@@ -9,7 +9,6 @@ import axios from 'axios'
 function Market(){
   const [allProducts, setAllProducts] = useState([]);
   
-
   useEffect(() => {
     const fetchProducts = async () => {
       try {
@@ -24,7 +23,6 @@ function Market(){
 
     fetchProducts();
   }, []);
-
 
   return(
     <main className="content-page">

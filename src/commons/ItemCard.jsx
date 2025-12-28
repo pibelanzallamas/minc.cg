@@ -8,8 +8,10 @@ function ItemCard({itemData}){
       <div className="item-info">
         <p className="item-title">{itemData.title}</p>
         <div className="item-description">
-          <p className="item-size-">{itemData.size}</p>
-          <p className="item-price">{Math.trunc(itemData.price)}</p>
+          {itemData.size == "Raffle Tickets" ? 
+          <div className="raffle-ticket">Raffle Tickets</div> :
+          <p className="item-size-">{itemData.size}</p>}
+          <p className="item-price">€{Math.trunc(itemData.price)}</p>
         </div>
       </div>
       <figure className="add-to-cart"><img src={addToCard} alt="" /></figure>
