@@ -9,14 +9,14 @@ function Home() {
         <figure className="home-figures figure-a">
             <img src={leftCharacter}></img>
         </figure>
-        <div className="home-mobile">
+        <section className="greetings-section">
           <figure className="greetings-message">
             <img src={greetings}></img>
           </figure>
-          <figure className="home-white-bar">
+          <figure className="home-char-bar">
             <img src={bar}></img>
           </figure> 
-        </div>
+        </section>
         <figure className="home-figures figure-b">
             <img src={rightCharacter}></img>
         </figure>
