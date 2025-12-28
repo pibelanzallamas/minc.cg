@@ -1,4 +1,4 @@
-import { useEffect. useState } from 'react'
+import { useEffect, useState } from 'react'
 import ItemCard from './commons/ItemCard.jsx'
 import marketTitle from "./assets/market/marketTitle.png"
 import descriptionBox from "./assets/market/descriptBox.png"
