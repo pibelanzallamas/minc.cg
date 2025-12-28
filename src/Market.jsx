@@ -12,6 +12,8 @@ function Market(){
 
   useEffect(() => {
     setAllProducts(getProducts());
+    setYay(true);
+
   }, []);
 
   const getProducts = async () => {
@@ -20,7 +22,6 @@ function Market(){
         "https://minc-cg-back.onrender.com/products/"
       );
       console.log(res.data);
-      setYay(true);
       return res.data;
     } catch (error) {
       console.error("Error fetching products:", error);
