@@ -8,33 +8,30 @@ import axios from 'axios'
 
 function Market(){
   const [allProducts, setAllProducts] = useState([]);
-  const [yay, setYay] = useState(false)
+  
 
   useEffect(() => {
-    setAllProducts(getProducts());
-    setYay(true);
+    const fetchProducts = async () => {
+      try {
+        const res = await axios.get(
+          "https://minc-cg-back.onrender.com/products"
+        );
+        setAllProducts(res.data);
+      } catch (error) {
+        console.error("Error fetching products:", error);
+      }
+    };
 
+    fetchProducts();
   }, []);
 
-  const getProducts = async () => {
-    try {
-      const res = await axios.get(
-        "https://minc-cg-back.onrender.com/products/"
-      );
-      console.log(res.data);
-      return res.data;
-    } catch (error) {
-      console.error("Error fetching products:", error);
-      throw error;
-    }
-  };
 
   return(
     <main className="content-page">
       <figure className="content-title-text">
         <img src={marketTitle} alt="market-title" />
       </figure>
-      {console.log(allProducts)}
+
       <section className="description-section">
         <figure className="description-box">
           <img src={descriptionBox} alt="market-title" />
@@ -47,7 +44,7 @@ function Market(){
       </section>
 
       <section className="market">
-        {yay && allProducts.map((e)=>(
+        {allProducts.length > 0 && allProducts.map((e)=>(
           <ItemCard itemData={e} />
         ))}
       </section>
