@@ -8,7 +8,7 @@ import axios from 'axios'
 
 function Market(){
   const [allProducts, setAllProducts] = useState([]);
-
+  const [yay, setYay] = useState(false)
 
   useEffect(() => {
     setAllProducts(getProducts());
@@ -20,13 +20,13 @@ function Market(){
         "https://minc-cg-back.onrender.com/products/"
       );
       console.log(res.data);
+      setYay(true);
       return res.data;
     } catch (error) {
       console.error("Error fetching products:", error);
       throw error;
     }
   };
-
 
   return(
     <main className="content-page">
@@ -46,7 +46,7 @@ function Market(){
       </section>
 
       <section className="market">
-        {allProducts.length > 0 && allProducts.map((e)=>(
+        {yay && allProducts.map((e)=>(
           <ItemCard itemData={e} />
         ))}
       </section>
