@@ -1,4 +1,6 @@
 import aboutUs from "./assets/home/aboutBox.png"
+import menuBox from "./assets/buttons/oneBoxShadow.png"
+import menuBoxSel from "./assets/buttons/menuBoxesShadowSel.png"
 
 function Footer() {
   return(

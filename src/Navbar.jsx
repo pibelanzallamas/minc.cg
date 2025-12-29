@@ -27,6 +27,7 @@ function Navbar() {
             <figure className="menu-desktop-bar">
               <img src={menuBar}></img>
             </figure>
+
             <Link to="/programming" className="menu-link box-1">
                 <figure className="menu-single-box box-1 box-not-sel"><img src={menuBox} alt="" /></figure>
                 <figure className="menu-single-box box-1 box-sel"><img src={menuBoxSel} alt="" /></figure>
@@ -48,7 +49,6 @@ function Navbar() {
               <img src={menuLine}></img>
             </figure>  
           </figure>
-        
         </nav>
 
         {/* EXTRA MENU MOBILE */}

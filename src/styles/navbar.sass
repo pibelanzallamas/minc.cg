@@ -1,121 +1,111 @@
 .navbar
-    display: flex
-    padding: 1.5rem 0.9rem 0.5rem 1.5rem
-    justify-content: space-between
-    align-items: center
+  display: flex
+  padding: 1.5rem 0.9rem 0.5rem 1.5rem
+  justify-content: space-between
+  align-items: center
 
 .navbar-logotipo
-    height: 3rem
-    aspect-ratio: 296 / 150
+  height: 3rem
+  aspect-ratio: 296 / 150
 
 .menu-mobile-button
-    width: 9rem 
-    display: flex
-    justify-content: center
-    cursor: pointer
-    img
-        width: 5rem 
+  width: 9rem 
+  display: flex
+  justify-content: center
+  cursor: pointer
+  img
+      width: 5rem 
 
 .menu-mobile-button > *
-    position: relative
-    z-index: 1
+  position: relative
+  z-index: 1
 
 .navbar-menu-line
-    position: absolute
-    margin-right: 0.3rem
-    img
-        width: 0.4rem
-        height: 10rem
-    z-index: 0
+  position: absolute
+  margin-right: 0.3rem
+  img
+      width: 0.4rem
+      height: 10rem
+  z-index: 0
 
 .extra-menu
-    display: flex
-    justify-content: flex-end
+  display: flex
+  justify-content: flex-end
 
 .extra-menu-buttons-div
-    margin-right: 0.9rem
-    display: flex
-    flex-direction: column
-    width: 9rem
-    align-items: center
-    gap: 1.1rem
-    position: absolute
-    z-index: 99
+  margin-right: 0.9rem
+  display: flex
+  flex-direction: column
+  width: 9rem
+  align-items: center
+  gap: 1.1rem
+  position: absolute
+  z-index: 99
 
 .navbar-extra-button
-    width: 7rem
+  width: 7rem
 
 .new-button-div
+  position: relative
+  z-index: 1
+
+.new-button
+  position: absolute
+  left: -2.7rem
+  top: 45%
+  transform: translateY(-50%)
+  width: 2rem
+  z-index: 0
+
+.menu-desktop, .menu-desktop-bar, .menu-closed
+  display: none
+
+@media (min-width: 1000px)
+  .navbar
+    display: flex
+    padding: 2.4rem 3rem 0.5rem 3.8rem
+
+  .navbar-logotipo
+      height: 4.5rem
+
+  .menu-mobile-button, .extra-menu, .navbar-menu-line
+      display: none
+
+  .menu-desktop
+    display: flex
     position: relative
     z-index: 1
 
-.new-button
+  .menu-desktop-bar
+    display: flex
+    width: 37.4rem
+
+  .menu-single-box
     position: absolute
-    left: -2.7rem
-    top: 45%
-    transform: translateY(-50%)
-    width: 2rem
     z-index: 0
+    top: -13%
+    cursor: pointer
+    width: 9rem
 
-.menu-desktop, .menu-desktop-bar, .menu-closed
-    display: none
+  .box-1
+    left: 5%
 
-@media (min-width: 1000px)
-    .navbar
-      display: flex
-      padding: 2.4rem 3rem 0.5rem 3.8rem
+  .box-2
+    left: 38.5%
 
-    .navbar-logotipo
-        height: 4.5rem
+  .box-3
+    left: 71%
 
-    .menu-mobile-button, .extra-menu, .navbar-menu-line
-        display: none
+  .box-sel
+    opacity: 0
 
-    .menu-desktop
-      display: flex
-      position: relative
-      z-index: 1
+  .box-not-sel 
+    opacity: 1
 
-    .menu-desktop-bar
-      display: flex
-      width: 37.4rem
-
-    .menu-single-box
-      position: absolute
-      z-index: 0
-      top: -13%
-      cursor: pointer
-      width: 9rem
-
-    .box-1
-      left: 5%
-
-    .box-2
-      left: 38.5%
-
-    .box-3
-      left: 71%
-
-    .menu-link
-      // position: relative
-      // display: inline-block
-
-    .menu-single-box
-      // position: absolute
-      // inset: 0
-
-    .box-sel
-      opacity: 0
-      // transition: opacity 0.2s ease
-
-    .box-not-sel 
-      opacity: 1
-      // transition: opacity 0.2s ease
-
-    .menu-link:hover .box-sel,
-    .menu-link:focus .box-sel 
-      opacity: 1
-    
-    .menu-link:hover .box-not-sel,
-    .menu-link:focus .box-not-sel 
-      opacity: 0
+  .menu-link:hover .box-sel,
+  .menu-link:focus .box-sel 
+    opacity: 1
+  
+  .menu-link:hover .box-not-sel,
+  .menu-link:focus .box-not-sel 
+    opacity: 0
