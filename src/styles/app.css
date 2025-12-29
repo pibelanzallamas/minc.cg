@@ -197,7 +197,7 @@ footer {
 }
 
 .about-us-text {
-  width: 4rem;
+  width: 3.6rem;
 }
 
 .about-us-link {
@@ -283,6 +283,34 @@ footer {
   margin-top: 0.4rem;
 }
 
+@media (min-width: 1000px) {
+  .videos {
+    margin-top: 1.5rem;
+    display: grid;
+    padding: 0 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    row-gap: 2.5rem;
+    column-gap: 0rem;
+  }
+  .video-card-box {
+    gap: 0.5rem;
+  }
+  .video-card-box .image-video {
+    width: 10rem;
+    height: 7rem;
+  }
+  .video-card-box .title-video {
+    width: 15rem;
+    height: 2.5rem;
+  }
+  .video-card-box p {
+    font-size: 0.8rem;
+    width: 30ch;
+    text-align: justify;
+    text-align-last: center;
+  }
+}
 .description-section {
   display: flex;
   align-items: center;
@@ -405,6 +433,9 @@ main {
 @media (min-width: 1000px) {
   .wraper {
     background-image: url("../assets/bg/websiteBackground.webp");
+  }
+  .content-title-text {
+    width: 6rem;
   }
 }
 

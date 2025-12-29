@@ -1,7 +1,6 @@
 import nikeShoe from "../assets/videos/MT_shoe@300x.png"
 
 function VideoCard({videoData}){
-
   return(
     <div className="video-card-box">
       <figure className="image-video">
@@ -19,7 +18,6 @@ function VideoCard({videoData}){
         <p>{videoData.desc}</p>
       </div>
     </div>
-
   )
 }
 
