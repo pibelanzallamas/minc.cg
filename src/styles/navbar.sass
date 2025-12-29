@@ -8,7 +8,7 @@
     height: 3rem
     aspect-ratio: 296 / 150
 
-.navbar-menu-button
+.menu-mobile-button
     width: 9rem 
     display: flex
     justify-content: center
@@ -16,7 +16,7 @@
     img
         width: 5rem 
 
-.navbar-menu-button > *
+.menu-mobile-button > *
     position: relative
     z-index: 1
 
@@ -27,9 +27,6 @@
         width: 0.4rem
         height: 10rem
     z-index: 0
-
-.menu-closed
-    display: none
 
 .extra-menu
     display: flex
@@ -60,57 +57,41 @@
     width: 2rem
     z-index: 0
 
-.navbar-menu-desktop, .menu-desktop-bar
+.menu-desktop, .menu-desktop-bar, .menu-closed
     display: none
 
 @media (min-width: 1000px)
     .navbar
-        display: flex
-        padding: 2.4rem 3rem 0.5rem 3.8rem
+      display: flex
+      padding: 2.4rem 3rem 0.5rem 3.8rem
+
     .navbar-logotipo
-        height: 5rem
+        height: 4.5rem
 
-    .navbar-menu-button
+    .menu-mobile-button, .extra-menu, .navbar-menu-line
         display: none
-    .navbar-menu-desktop
-        display: flex
-        gap: 1rem
-        .navbar-extra-button
-            width: 9rem
-            cursor: pointer
-            .new-button
-                position: absolute
-                left: 3.5rem
-                top: 135%
-                transform: translateY(-50%)
-                width: 2.3rem
-                z-index: 0
 
-    .extra-menu-buttons-div, .navbar-menu-button
-        display: none
+    .menu-desktop
+      display: flex
+      position: relative
+      z-index: 1
 
     .menu-desktop-bar
-        display: flex
-        width: 37.4rem
-        transform: translate(0, 0.7rem)
-        position: relative
-        z-index: 1
-        cursor: pointer
-        
-    .menu-desktop-box
-        position: absolute
-        z-index: 0
-        width: 8.2rem
-        top:  -0.4rem
-        left: 2.3rem
-        filter: drop-shadow(0.5rem 0.5rem 0 rgba(0, 0, 0, 0.5))
-        cursor: pointer
+      display: flex
+      width: 37.4rem
 
-    .box-selected
-      display: none
+    .menu-single-box
+      position: absolute
+      z-index: 0
+      top: -13%
+      cursor: pointer
+      width: 9rem
 
-    .box-link:hover .box-selected
-      display: block
+    .box-1
+      left: 5%
 
-    .box-link:hover .box-normal
-      display: none
+    .box-2
+      left: 38.5%
+
+    .box-3
+      left: 71%
