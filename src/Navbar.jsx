@@ -1,6 +1,6 @@
 import logo from "./assets/logo/CGCmincLogo.svg"
-import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useState} from "react";
+import { Link } from "react-router-dom";
 import menuButton from "./assets/buttons/menuBttn@300x.png"
 import menuLine from "./assets/buttons/menuLine.svg"
 import pButton from "./assets/buttons/proBttn@300x.png"
@@ -27,15 +27,17 @@ function Navbar() {
             <figure className="menu-desktop-bar">
               <img src={menuBar}></img>
             </figure>
-            <Link to="/programming">
+            <Link to="/programming" className="menu-link box-1">
                 <figure className="menu-single-box box-1 box-not-sel"><img src={menuBox} alt="" /></figure>
                 <figure className="menu-single-box box-1 box-sel"><img src={menuBoxSel} alt="" /></figure>
             </Link>
-            <Link to="/videos">
+            <Link to="/videos" className="menu-link box-1">
                 <figure className="menu-single-box box-2"><img src={menuBox} alt="" /></figure>
+                <figure className="menu-single-box box-2 box-sel"><img src={menuBoxSel} alt="" /></figure>
             </Link>
-            <Link to="/market">
+            <Link to="/market" className="menu-link box-1">
                 <figure className="menu-single-box box-3"><img src={menuBox} alt="" /></figure>
+                <figure className="menu-single-box box-3 box-sel"><img src={menuBoxSel} alt="" /></figure>
             </Link>
           </div>
          
@@ -78,15 +80,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-          {/* no me reconoce el LINK, estoy hasta l
-            
-            tengo que poner los boxes, creo que es mnejor hacerlos de cero
-            
-            asi les podes poner hover
-            
-            me quiero comprar remeras piolas no me acuerdo donde quedaba la tienda
-            
-            AGUANTE LINUX QUIERO AMIGOS SOLO QUE CONOSCAN LINUXXXX
-            
-            VAS BIEN*/}
