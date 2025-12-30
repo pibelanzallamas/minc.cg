@@ -163,6 +163,7 @@
     align-items: center;
     justify-content: center;
     gap: 4.5rem;
+    border: 1px solid red;
   }
   .greetings-message {
     margin-top: 1.6rem;
