@@ -6,14 +6,12 @@ function ItemCard({itemData}){
     <div className="item-card">
       <figure className="item-image"><img src={itemData.image}/></figure>
       
-      <div className="item-info">
-        <p className="item-title">{itemData.title}</p>
-        <div className="item-description">
-          {itemData.size == "Raffle Tickets" ? 
-          <div className="raffle-ticket">Raffle Tickets</div> :
-          <p className="item-size-">{itemData.size}</p>}
-          <p className="item-price">€{Math.trunc(itemData.price)}</p>
-        </div>
+      <p className="item-title">{itemData.title}</p>
+      
+      <div className="item-size-price">
+        {itemData.size == "Raffle Tickets" ? <div className="raffle-ticket">Raffle Tickets</div>
+        : <p className="item-size-">{itemData.size}</p>}
+        <p className="item-price">€{Math.trunc(itemData.price)}</p>
       </div>
       
       <figure className="add-to-cart"><img src={addToCard} alt="" /></figure>
