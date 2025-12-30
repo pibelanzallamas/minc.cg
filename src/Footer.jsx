@@ -10,10 +10,10 @@ function Footer() {
         <figure className="about-us-text">
           <img src={aboutUs}></img>
         </figure>
-        {/* <Link to="/about-us" className="about-us-link">
+        <Link to="/about-us" className="about-us-link">
           <figure className=" about-us-box"><img src={menuBox} alt="" /></figure>
           <figure className=" about-us-sel-box"><img src={menuBoxSel} alt="" /></figure>
-        </Link> */}
+        </Link>
       </div>
     </footer>
 
