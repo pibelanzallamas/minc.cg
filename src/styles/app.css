@@ -184,12 +184,12 @@
     position: absolute;
   }
   .figure-a {
-    left: -2rem;
+    left: -4rem;
     top: -1.5rem;
   }
   .figure-b {
-    right: -3rem;
-    top: 5rem;
+    right: -6rem;
+    top: 9rem;
   }
 }
 footer {
