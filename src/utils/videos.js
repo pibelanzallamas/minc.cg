@@ -6,12 +6,12 @@ import img5 from "../assets/videos/biri_pic@300x.png";
 import img6 from "../assets/videos/oisc_image@300x.png";
 import img7 from "../assets/videos/pom_pic@300x.png";
 
-import tit1 from "../assets/videos/inFlux.png";
+import tit1 from "../assets/videos/inFlux_2.png";
 import tit2 from "../assets/videos/media.png";
 import tit3 from "../assets/videos/Sensory.png";
 import tit4 from "../assets/videos/knowledge.png";
 import tit5 from "../assets/videos/birindwa.png";
-import tit6 from "../assets/videos/OI_SC_1.png";
+import tit6 from "../assets/videos/OI_SC_1_2.png";
 import tit7 from "../assets/videos/ProductsOf.png";
 
 
