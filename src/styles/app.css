@@ -138,6 +138,10 @@
     opacity: 0;
   }
 }
+.welcome-page {
+  justify-content: center;
+}
+
 .greetings-message {
   width: 15.8rem;
   margin-top: 11rem;
@@ -183,13 +187,15 @@ footer {
   display: flex;
   align-content: center;
   justify-content: center;
+  border: 1px solid red;
+  padding: 3rem;
 }
 
 .about-us {
+  border: 1px solid red;
   display: flex;
   align-content: center;
   justify-content: center;
-  margin-bottom: 3rem;
   width: 5rem;
   cursor: pointer;
   position: relative;
@@ -232,26 +238,19 @@ footer {
 }
 
 @media (min-width: 1000px) {
-  footer {
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+  .about-us-text {
+    width: 4.5rem;
+  }
+  .about-us-link {
+    position: absolute;
+    top: -110%;
+    left: -20%;
+  }
+  .about-us-box, .about-us-sel-box {
+    width: 7.5rem;
+    height: 3.5rem;
   }
 }
-.about-us-text {
-  width: 4.5rem;
-}
-
-.about-us-link {
-  position: absolute;
-  top: -110%;
-  left: -20%;
-}
-
-.about-us-box, .about-us-sel-box {
-  width: 7.5rem;
-  height: 3.5rem;
-}
-
 .videos {
   margin-top: 0.2rem;
   display: grid;
@@ -456,6 +455,11 @@ footer {
   margin: 0;
 }
 
+main {
+  display: flex;
+  flex: 1;
+}
+
 img {
   height: 100%;
   width: 100%;
@@ -474,15 +478,6 @@ img {
   background-attachment: fixed;
 }
 
-main {
-  display: flex;
-  flex: 1;
-}
-
-.welcome-page {
-  justify-content: center;
-}
-
 .content-page {
   flex-direction: column;
   align-items: center;
@@ -491,7 +486,6 @@ main {
 }
 
 .content-title-text {
-  width: 4rem;
   width: 4.5rem;
 }
 
