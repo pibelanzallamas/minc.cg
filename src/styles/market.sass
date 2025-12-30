@@ -12,7 +12,6 @@
   width: 3.2rem
   
 .market-div
-  // border: 1px solid red
   width: 100%
   display: flex
   justify-content: center
@@ -27,35 +26,30 @@
   padding: 1rem
   row-gap: 2.5rem
   column-gap: 3rem
-  // border: 1px solid red
 
 .item-card
   width: 100%
   display: flex
   flex-direction: column
-  // gap: 0.5rem
   justify-content: space-between
   color: white
   font-family: 'Arial'
   font-size: 0.5rem
   text-shadow: 0.13rem 0.14rem 0 rgba(0, 0, 0, 0.9); 
-  // border: 1px solid red
 
 .item-image
-  // border: 1px solid red
   align-self: flex-start
   height: 6rem
   aspect-ratio: 513 / 665
 
 .item-title
-  // border: 1px solid red
+  // border: 1px olid red
   width: 4.8rem
   font-size: 0.6rem
   margin-top: 0.5rem
 
 .item-size-price
   margin-top: 0.3rem
-  // border: 1px solid red
   display: flex
   justify-content: space-between
   width: 4.75rem
@@ -96,38 +90,69 @@
   .view-cart
     width: 5rem
 
+  .market-div
+    width: 100%
+    // justify-content: flex-start
+
   .market
-    margin-top: 1.5rem
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 0.6rem
     width: 70%
-    column-gap: 5.5rem
-    row-gap: 3rem
-    padding: 0
-    padding-left: 3rem
+    margin-left: 6rem
+    padding: 1rem
+    row-gap: 2.5rem
+    column-gap: 3rem
 
   .item-card
-    height: 18.5rem
-    gap: 0rem
-    width: 90%
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    color: white
+    font-family: 'Arial'
+    font-size: 0.5rem
+    text-shadow: 0.13rem 0.14rem 0 rgba(0, 0, 0, 0.9); 
 
   .item-image
-    height: 10rem
+    align-self: flex-start
+    height: 12rem
+    aspect-ratio: 513 / 665
 
-  .item-texts
-    font-size: 1rem
-  
   .item-title
-    width: 15rem
-    height: 2.6rem
+    // border: 1px olid red
+    width: 10.8rem
+    font-size: 0.8rem
+    margin-top: 0.8rem
 
   .item-size-price
-    width: 7.5rem
-    height: 1.2rem
+    font-size: 0.8rem
+    margin-top: 0.4rem
+    display: flex
+    justify-content: space-between
+    width: 7rem
 
   .raffle-ticket
+    font-family: VCR OSD Mono
+    color: #FEF001
     font-size: 0.8rem
 
-  .add-to-cart
-    width: 8rem
+  .item-price
+    font-family: VCR OSD Mono
+    color: #FEF001
 
-  
-  
+  .about-us.add-to-cart
+    width: 7rem
+    margin-top: 1.7rem
+
+  .add-to-cart-text
+    width: 6rem
+    padding: 0 0.3rem
+
+  .about-us-link.add-link
+    top: -150%
+    left: 0%
+
+  .about-us-box.add-cart-box, .about-us-sel-box.add-cart-box-sel
+    width: 7.5rem
+    height: 3rem
