@@ -352,14 +352,22 @@ footer {
   width: 3.2rem;
 }
 
+.market-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .market {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.6rem;
   width: 100%;
   margin-bottom: 0.2rem;
+  margin-left: 1rem;
   padding: 1rem;
-  row-gap: 2rem;
+  row-gap: 2.5rem;
+  column-gap: 3rem;
 }
 
 .item-card {

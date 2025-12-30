@@ -41,11 +41,13 @@ function Market(){
         </Link>
       </section>
 
-      <section className="market">
-        {allProducts.length > 0 && allProducts.map((e)=>(
-          <ItemCard itemData={e} />
-        ))}
-      </section>
+      <div className='market-div'>
+        <section className="market">
+          {allProducts.length > 0 && allProducts.map((e)=>(
+            <ItemCard itemData={e} />
+          ))}
+        </section>
+      </div>
     </main>
   )
 
