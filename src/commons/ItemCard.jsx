@@ -1,4 +1,8 @@
-import addToCard from "../assets/market/addToCart.png"
+import addToCard from "../assets/market/addToCartAlone.png"
+import menuBox from "../assets/buttons/oneBoxShadow.png"
+import menuBoxSel from "../assets/buttons/menuBoxesShadowSel.png"
+import { Link } from "react-router-dom"
+
 
 function ItemCard({itemData}){
 
@@ -14,7 +18,13 @@ function ItemCard({itemData}){
         <p className="item-price">€{Math.trunc(itemData.price)}</p>
       </div>
       
-      <figure className="add-to-cart"><img src={addToCard} alt="" /></figure>
+      <div className="about-us add-to-cart">
+        <figure className="add-to-cart-text"><img src={addToCard} alt="" /></figure>
+        <Link to="/about-us" className="about-us-link add-link">
+          <figure className="about-us-box add-cart-box"><img src={menuBox} alt="" /></figure>
+          <figure className="about-us-sel-box add-cart-box-sel"><img src={menuBoxSel} alt="" /></figure>
+        </Link>
+      </div>
     </div>
 
   )
