@@ -7,7 +7,7 @@ function Footer() {
   return(
     <footer>
       <div className="about-us">
-        <figure className="about-us-text">
+        <figure>
           <img src={aboutUs}></img>
         </figure>
         <Link to="/about-us" className="about-us-link">

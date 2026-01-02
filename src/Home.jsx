@@ -1,4 +1,4 @@
-import greetings from "./assets/home/greetings.png"
+import greetingsMsg from "./assets/home/greetings.png"
 import bar from "./assets/home/whiteBar@300x.png"
 import leftCharacter from "./assets/home/characterLeft.png"
 import rightCharacter from "./assets/home/characterRight.png"
@@ -11,7 +11,7 @@ function Home() {
       </figure>
       <section className="greetings-section">
         <figure className="greetings-message">
-          <img src={greetings}></img>
+          <img src={greetingsMsg}></img>
         </figure>
         <figure className="home-char-bar">
           <img src={bar}></img>
