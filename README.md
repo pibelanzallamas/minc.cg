@@ -19,7 +19,7 @@ The result is a modern, scalable, and user-friendly website built with best prac
 
 | Design | Implementation |
 |------|----------------|
-| ![Design Preview](screenshots/design-original.png) | ![Live Preview](screenshots/implementation.png) |
+| ![Design Preview](https://res.cloudinary.com/daynclfo8/image/upload/v1767362304/desktopHomeTemplate_ldge7a.png) | ![Live Preview](https://res.cloudinary.com/daynclfo8/image/upload/v1767360213/2026-01-02-10-21-18_t8acgo.png) |
 
 *A complete visual case study and comparisons are available on Behance (link coming soon).*
 
@@ -34,6 +34,7 @@ The result is a modern, scalable, and user-friendly website built with best prac
 
 ## 📂 Project Structure
 
+```text
 minc.cg/
 ├─ public/
 ├─ src/
@@ -41,11 +42,12 @@ minc.cg/
 │  ├─ components/
 │  ├─ pages/
 │  └─ styles/
-├─ screenshots/
-├─ package.json
+├─ package-lock.json
 ├─ vite.config.js
 ├─ vercel.json
+├─ index.html
 └─ README.md
+```
 
 ## 🚀 Installation & Usage
 
@@ -83,9 +85,9 @@ Run the development server:
 ✅ Completed and deployed  
 
 🔧 Possible future improvements:
-- Enhanced animations  
+- Moving animations  
 - Programming section  
-- Dynamic content integration
+- Market section available
 
 ## 👤 Author
 
@@ -100,3 +102,7 @@ Ux/Ui Design
 London, England
 
 - Instagram: https://www.instagram.com/aziah.daniel/
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
