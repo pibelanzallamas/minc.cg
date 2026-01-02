@@ -51,16 +51,16 @@ minc.cg/
 
 Clone the repository:
 
-git clone https://github.com/pibelanzallamas/minc.cg.git
-cd minc.cg
+```git clone https://github.com/pibelanzallamas/minc.cg.git```  
+```cd minc.cg```
 
 Install dependencies:
 
-npm install
+```npm install```
 
 Run the development server:
 
-npm run dev
+```npm run dev```
 
 ## ✨ Key Features
 
@@ -73,10 +73,10 @@ npm run dev
 ## 📸 Screenshots
 
 ### Desktop
-![Home Desktop](screenshots/home-desktop.png)
+![Home Desktop](https://res.cloudinary.com/daynclfo8/image/upload/v1767315491/2026-01-01-21-57-29_c8rsci.png)
 
 ### Mobile
-![Home Mobile](screenshots/home-mobile.png)
+![Home Mobile](https://res.cloudinary.com/daynclfo8/image/upload/v1767360558/2026-01-02-10-28-58_xub4uo.png)
 
 ## 📌 Project Status
 
@@ -84,8 +84,8 @@ npm run dev
 
 🔧 Possible future improvements:
 - Enhanced animations  
-- SEO optimization  
-- Dynamic content integration  
+- Programming section  
+- Dynamic content integration
 
 ## 👤 Author
 
@@ -95,8 +95,8 @@ Buenos Aires, Argentina
 
 - GitHub: https://github.com/pibelanzallamas
 
-**Daniel Aziah**
-Ux/Ui Design
+**Daniel Aziah**  
+Ux/Ui Design  
 London, England
 
 - Instagram: https://www.instagram.com/aziah.daniel/
