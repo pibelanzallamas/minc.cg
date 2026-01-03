@@ -6,6 +6,7 @@ import Home from './Home';
 import Videos from './Videos'
 import Programming from './Programming'
 import Market from './Market'
+import AboutUs from './AboutUs'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/programming" element={<Programming/>}/>
         <Route path="/videos" element={<Videos />} />
         <Route path="/market" element={<Market/>}/>
+        <Route path="/about-us" element={<AboutUs/>}/>
       </Routes>
       <Footer/>
     </div>
