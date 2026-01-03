@@ -1,18 +1,39 @@
 import programTitle from "./assets/programming/programTitle.png"
-import introProgam from "./assets/programming/introProgram.png"
+import introProgam from "./assets/programming/BoxNewVersion.png"
+import globe from "./assets/programming/globe.png"
+import flag from "./assets/programming/flag.png"
+import unionBlackTitle from "./assets/programming/UBtitle.png"
+import uBDescription from "./assets/programming/description.png"
 
 function Programming(){
   return(
     <main className="content-page">
       <figure className="content-title-text">
-        <img src={programTitle} alt="video-title" />
+        <img src={programTitle} alt="programming-title" />
       </figure>
 
-      <section className="description-section">
-        <figure className="description-box">
-          <img src={introProgam} alt="market-title" />
-        </figure>
-      </section>
+      <figure className="description-box">
+        <img src={introProgam} alt="market-title" />
+      </figure>
+
+      <figure className="description-box">
+        <img src={globe} alt="globe-icon" />
+      </figure>
+
+      <figure className="description-box">
+        <img src={flag} alt="union-black-flag" />
+      </figure>
+
+      <figure className="description-box">
+        <img src={unionBlackTitle} alt="union-black-title" />
+      </figure>
+
+      <figure className="description-box">
+        <img src={uBDescription} alt="description-black-union" />
+      </figure>
+
+      <ul className="articles-grid"></ul>
+      
 
     </main>
   )
