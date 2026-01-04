@@ -5,22 +5,31 @@ import globeIcon from "./assets/aboutus/globe.png";
 
 function AboutUs(){
   return (
-    <main className="content-page">
-      <figure>
-        <img src={instagramIcon} alt="Instagram integration icon" />
-      </figure>
-
-      <figure>
-        <img src={descriptionIcon} alt="Content description icon" />
-      </figure>
-
-      <figure>
-        <img src={namingIcon} alt="Brand naming icon" />
-      </figure>
-
-      <figure>
+    <main className="content-page about-us-page">
+      <figure className="aboutus-world">
         <img src={globeIcon} alt="Global reach icon" />
       </figure>
+
+      <section className="simple-text about-us-credits">
+        <p><span className="yellow">Name: </span> 
+        <span className="minc-title">CGC MINC</span></p>
+        <p><span className="yellow">Know as: </span> 
+        <span className="">MINC</span></p>
+        <p><span className="yellow">Also know as: </span> 
+        <span className="">MINC.CG / M.INC</span></p>
+      </section>
+
+      <section className="simple-text about-us-services">
+        <p>Art & Design Studio . Observatory . Science Facility . Social Research Institute </p>
+        <p>Global Network . Documentation . Distribution . Programming .</p>
+      </section>
+
+      <a href="https://www.instagram.com/minc.cg/" target="_blank">
+        <figure className="instagram-link">
+          <img src={instagramIcon} alt="Instagram integration icon" />
+        </figure>
+      </a>
+
     </main>
   )
 
