@@ -4,6 +4,7 @@ import globe from "./assets/programming/globe.png"
 import flag from "./assets/programming/flag.png"
 import unionBlackTitle from "./assets/programming/UBtitle.png"
 import uBDescription from "./assets/programming/description.png"
+import programming from "./utils/programming"
 
 function Programming(){
   return(
@@ -32,7 +33,10 @@ function Programming(){
         <img src={uBDescription} alt="description-black-union" />
       </figure>
 
-      <ul className="articles-grid"></ul>
+      <ul className="articles-grid">
+
+
+      </ul>
       
 
     </main>
