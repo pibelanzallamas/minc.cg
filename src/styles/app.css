@@ -398,7 +398,7 @@ footer {
 }
 
 .article-title {
-  width: 15rem;
+  width: 10rem;
 }
 
 .article-copete {
@@ -412,18 +412,40 @@ footer {
 
 .article-image {
   margin-top: 0.7rem;
-  width: 6rem;
+  width: 5rem;
   aspect-ratio: 777/481;
 }
 
 .article-epigrafe {
   text-align: justify;
   text-align-last: right;
-  width: 13rem;
+  width: 14rem;
+}
+.article-epigrafe p {
+  font-size: 0.5rem;
+  font-weight: 600;
+}
+.article-epigrafe p:first-child {
+  text-align-last: left;
 }
 
-.article-body {
-  margin-top: 3rem;
+.article-body p {
+  font-size: 0.6rem;
+}
+
+.arrow-section {
+  display: flex;
+  margin-top: 8rem;
+  align-items: center;
+  gap: 1.8rem;
+}
+.arrow-section p {
+  font-size: 0.8rem;
+}
+
+.article-arrow {
+  width: 1rem;
+  cursor: pointer;
 }
 
 .description-section {

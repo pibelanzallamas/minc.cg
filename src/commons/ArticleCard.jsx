@@ -1,10 +1,14 @@
 import { useParams } from "react-router-dom";
 import {programming} from "../utils/programming"
+import leftArrow from "../assets/programming/leftArrow.png"
+import rightArrow from "../assets/programming/rightArrow.png"
+import { useState } from "react";
 
-
-function ArticleCard({articleData}){
+function ArticleCard(){
   const {slug} = useParams();
   const article = programming.find(p => p.slug === slug);
+  const [actualPage, setActualPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
 
   if(!article) return <p className="article-not-found simple-text">Article not found.</p>;
 
@@ -15,9 +19,8 @@ function ArticleCard({articleData}){
       </figure>
 
       <section className="article-copete">
-
         <figure className="article-image">
-          <img src={article.image} alt="" />
+          <img src={article.image} alt="article-image" />
         </figure>
         
         <p className="article-epigrafe simple-text">{article.epilogo.map(e =>(
@@ -26,7 +29,6 @@ function ArticleCard({articleData}){
             <br/>
           </>
         ))}</p>
-
       </section>
 
       <section className="article-body simple-text">
@@ -37,8 +39,16 @@ function ArticleCard({articleData}){
           </div>
         ))}
       </section>
-      
 
+      <section className="arrow-section"> 
+        <figure className="article-arrow">
+          <img src={leftArrow} alt="" />
+        </figure>
+        <p className="simple-text">Page {actualPage} of {totalPages}</p>
+        <figure className="article-arrow">
+          <img src={rightArrow} alt="" />
+        </figure>
+      </section>
     </article>
   )
 }
