@@ -1,6 +1,5 @@
 
-
-function ArticleCard(){
+function ArticleCard({articleData}){
   return(
     <article className="article-card">
       <figure className="article-title">
