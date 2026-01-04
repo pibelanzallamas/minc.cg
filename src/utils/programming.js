@@ -1,11 +1,14 @@
 export const programming = [
   {
+    id: 1,
+    name: "The Union Black",
     title: "https://res.cloudinary.com/daynclfo8/image/upload/v1767532176/HeadingSubHeading_in8gsf.png",
     titleSelected: "https://res.cloudinary.com/daynclfo8/image/upload/v1767532207/UBtitle_hhcnx5.png",
     titleImage: "https://res.cloudinary.com/daynclfo8/image/upload/v1767532163/flag_fai26c.png",
     subtitle: 'A PERSPECTIVE ON RACE AND IDENTITY',
     epilogoSelected: "An examination of race, identity and belongin in Britain. Exploring how personal experience intersects with history, perception and social reality.\n\nBy Daniel Mukendi",
     author:   "Daniel Mbaya Mukendi",
+    slug: "the-union-black",
     image: "https://res.cloudinary.com/daynclfo8/image/upload/v1767532163/flag_fai26c.png",
     epilogo: "Union Black 2003 is Chris Ofili's red, black and green version of the British 'Union Jack' flag. In it the artist altered the colours of the traditional Union flag so that the red cross of St George is black, the white saltire of St Andrew is green and the red saltire of St Pantrick is black; the background of Ofili's flag is red. His colours derive from the Pan-African tricolour that the American Black nationalist Marcus Garvey suggested for the United Negro Improvement Association political movement of the 1920s.",
     body: [`

@@ -7,6 +7,7 @@ import Videos from './Videos'
 import Programming from './Programming'
 import Market from './Market'
 import AboutUs from './AboutUs'
+import ArticleCard from './commons/ArticleCard';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/videos" element={<Videos />} />
         <Route path="/market" element={<Market/>}/>
         <Route path="/about-us" element={<AboutUs/>}/>
+        <Route path="/programming/:slug" element={<ArticleCard />} />
       </Routes>
       <Footer/>
     </div>

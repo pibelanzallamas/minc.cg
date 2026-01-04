@@ -2,9 +2,6 @@ import ArticleCard from "./commons/ArticleCard"
 import programTitle from "./assets/programming/programTitle.png"
 import introProgam from "./assets/programming/BoxNewVersion.png"
 import globe from "./assets/programming/globe.png"
-import flag from "./assets/programming/flag.png"
-import unionBlackTitle from "./assets/programming/UBtitle.png"
-import uBDescription from "./assets/programming/description.png"
 import {programming} from "./utils/programming"
 import { Link } from "react-router-dom"
 
@@ -29,12 +26,12 @@ function Programming(){
             <figure className="article-image-select">
               <img src={e.image} alt="union-black-flag" />
             </figure> 
-            <Link to="programming-1/">
-            <figure className="article-title-select">
-              <img src={e.titleSelected} alt="union-black-flag" />
-            </figure> 
+            <Link key={e.id} to={`/programming/${e.slug}`}>
+              <figure className="article-title-select">
+                <img src={e.titleSelected} alt="union-black-flag" />
+              </figure> 
             </Link>
-            <div className="article-description-select">{e.epilogoSelected.split("\n\n").map((paragraph, index) => 
+            <div className="simple-text article-description-select">{e.epilogoSelected.split("\n\n").map((paragraph, index) => 
             (<><p key={index}>{paragraph}</p><br/></>))}</div>
           </div>
         ))}
