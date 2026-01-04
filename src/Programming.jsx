@@ -31,8 +31,13 @@ function Programming(){
                 <img src={e.titleSelected} alt="union-black-flag" />
               </figure> 
             </Link>
-            <div className="simple-text article-description-select">{e.epilogoSelected.split("\n\n").map((paragraph, index) => 
-            (<><p key={index}>{paragraph}</p><br/></>))}</div>
+            <div className="simple-text article-description-select">{
+              e.epilogoSelected.split("\n\n").map((paragraph, index) => 
+              (<>
+              <p key={index}>{paragraph}</p>
+              <br/>
+              </>))}
+            </div>
           </div>
         ))}
       </div>

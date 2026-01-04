@@ -20,7 +20,12 @@ function ArticleCard({articleData}){
           <img src={article.image} alt="" />
         </figure>
         
-        <p className="article-epigrafe simple-text">{article.epilogo}</p>
+        <p className="article-epigrafe simple-text">{article.epilogo.map(e =>(
+          <>
+            <p>{e}</p>
+            <br/>
+          </>
+        ))}</p>
 
       </section>
 
