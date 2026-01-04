@@ -6,7 +6,7 @@ function ArticleCard({articleData}){
   const {slug} = useParams();
   const article = programming.find(p => p.slug === slug);
 
-  if(!article) return <p>Article not found!</p>;
+  if(!article) return <p className="article-not-found simple-text">Article not found.</p>;
 
   return(
     <article className="article">

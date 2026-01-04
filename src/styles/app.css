@@ -388,6 +388,11 @@ footer {
   align-items: center;
 }
 
+.article-not-found {
+  margin: 2rem auto;
+  font-size: 1rem;
+}
+
 .article-title {
   width: 15rem;
 }
