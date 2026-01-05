@@ -8,7 +8,7 @@ function ArticleCard(){
   const {slug} = useParams();
   const article = programming.find(p => p.slug === slug);
   const [actualPage, setActualPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(1);
+  const [totalPages, setTotalPages] = useState(3);
 
   if(!article) return <p className="article-not-found simple-text">Article not found.</p>;
 
@@ -41,11 +41,14 @@ function ArticleCard(){
       </section>
 
       <section className="arrow-section"> 
-        <figure className="article-arrow">
+        <figure onClick={() => setActualPage(actualPage - 1)} 
+        className={actualPage == 1 ? "disabled"  :"article-arrow"}>
           <img src={leftArrow} alt="" />
         </figure>
         <p className="simple-text">Page {actualPage} of {totalPages}</p>
-        <figure className="article-arrow">
+        <figure 
+        onClick={() => setActualPage(actualPage + 1)} 
+        className={actualPage == totalPages ? "disabled"  :"article-arrow"}>
           <img src={rightArrow} alt="" />
         </figure>
       </section>

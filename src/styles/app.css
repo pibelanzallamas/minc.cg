@@ -437,6 +437,7 @@ footer {
   display: flex;
   margin-top: 8rem;
   align-items: center;
+  justify-content: center;
   gap: 1.8rem;
 }
 .arrow-section p {
@@ -446,6 +447,12 @@ footer {
 .article-arrow {
   width: 1rem;
   cursor: pointer;
+}
+
+.disabled {
+  width: 1rem;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .description-section {
