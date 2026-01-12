@@ -693,7 +693,7 @@ img {
   flex-direction: column;
   min-height: 100dvh;
   overflow: hidden;
-  background-image: url("../assets/bg/webBackgroundRework.webp");
+  background-image: url("../assets/bg/websiteBackgroundResize.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -713,7 +713,7 @@ img {
 
 @media (min-width: 1000px) {
   .wraper {
-    background-image: url("../assets/bg/websiteBackground.webp");
+    background-image: url("../assets/bg/websiteBackgroundResize.jpg");
   }
   .content-title-text {
     width: 6rem;

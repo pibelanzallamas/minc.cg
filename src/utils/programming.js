@@ -13,7 +13,7 @@ export const programming = [
     epilogo: [`"Union Black 2003 is Chris Ofili's red, black and green version of the British 'Union Jack' flag. In it the artist altered the colours of the traditional Union flag so that the red cross of St George is black, the white saltire of St Andrew is green and the red saltire of St Pantrick is black; the background of Ofili's flag is red. His colours derive from the Pan-African tricolour that the American Black nationalist Marcus Garvey suggested for the United Negro Improvement Association political movement of the 1920s."`, 'Tate.org.co.uk'],
     body: [`
     For those of us that have reached adulthood having gone through an inebvitable
-    indentity crisis, the union black is a comforting sight to behold. It recognises the duality
+    identity crisis, the union black is a comforting sight to behold. It recognises the duality
     in being of African/Caribbean descent, while spending most of your life in a colonial 
     country. As children of first-generation immigrants many of us are more familiar with
     the UK than we are out heritage countries, each aspect of an identity shaped by such
@@ -33,7 +33,7 @@ export const programming = [
     speak of it or not. A single visual representation of the history of our families, the 
     struggles faced by afro/Caribbeans in Britain today, the pride we feel for out
     background, the love we feel for where our homes reside, and the duality of being a 
-    parth of both cultures in diffrente ways.`,
+    part of both cultures in different ways.`,
     `It should be noted that a large portion of the black British population are Caribbean.
     As we know already they've had a strong presence in the UK for years now and are 
     two or three possibly four generations deep. Their influence has been well 
@@ -41,7 +41,7 @@ export const programming = [
     relatively new in comparison so the experiences between these two communities
     may differ slightly but overall it's safe to say there is inevitably enough
     similarities to pair them together.`,
-    `Let's start from th ebeginning. For the most part, primary school doesn't invlove much
+    `Let's start from the beginning. For the most part, primary school doesn't involve much
     more than a few harmless questions that we can chalk up to childish innocence and
     curiosity. "Are your bones black too?" "Why are your palms a different colour to the
     rest of you?" and questions of that nature. These are the kinds of things we may be
@@ -75,7 +75,7 @@ export const programming = [
     frustrated at their ineptitude.`,
     `Now although this is taking quite the toll, we can rest assured knowing it's not all bad. 
     You have friends, and frankly that helps a lot. However, even that's not without its 
-    repuercussions. They make it clear that what we had described as "childish innocence"
+    repercussions. They make it clear that what we had described as "childish innocence"
     isn't outgrown at the same pace as their preadolescence. That innocence is now 
     ignorance. You know they're not racist per se yet, it's painfully evident that they have
     spent a lifetime almost exlusively (in some casese 100% exclusively) surrounded by
