@@ -1,4 +1,4 @@
-import logo from "./assets/logo/CGCmincLogo.svg"
+import logo from "./assets/logo/CGCmincLogo.webp"
 import { useState} from "react";
 import { Link } from "react-router-dom";
 import menuButton from "./assets/buttons/menuBttn@300x.png"

@@ -1,7 +1,7 @@
-import greetingsMsg from "./assets/home/greetings.png"
-import bar from "./assets/home/whiteBar@300x.png"
-import leftCharacter from "./assets/home/characterLeft.png"
-import rightCharacter from "./assets/home/characterRight.png"
+import greetingsMsg from "./assets/home/greetings.webp"
+import bar from "./assets/home/whiteBar@300x.webp"
+import leftCharacter from "./assets/home/characterLeft.webp"
+import rightCharacter from "./assets/home/characterRight.webp"
 
 function Home() {
   return(
