@@ -1,9 +1,8 @@
-import ArticleCard from "./commons/ArticleCard"
-import programTitle from "./assets/programming/programTitle.png"
-import introProgam from "./assets/programming/BoxNewVersion.png"
-import globe from "./assets/programming/globe.png"
-import {programming} from "./utils/programming"
 import { Link } from "react-router-dom"
+import {programming} from "./utils/programming"
+import programTitle from "./assets/programming/programTitle.png"
+import introProgam from "./assets/programming/BoxNewVersion.webp"
+import globe from "./assets/programming/globe.webp"
 
 function Programming(){
   return(
@@ -17,7 +16,7 @@ function Programming(){
       </figure>
 
       <figure className="programming-image">
-        <img src={globe} alt="globe-icon" />
+        <img src={globe} loading="lazy" alt="globe-icon"x/>
       </figure>
 
       <div className="articles-grid">

@@ -7,7 +7,7 @@ function AboutUs(){
   return (
     <main className="content-page about-us-page">
       <figure className="aboutus-world">
-        <img src={globeIcon} alt="Global reach icon" />
+        <img src={globeIcon} loading="lazy" alt="Global reach icon" />
       </figure>
 
       <section className="simple-text about-us-credits">
