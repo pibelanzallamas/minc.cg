@@ -175,29 +175,29 @@ export const programming = [
     be understood by all, nor does it need explaining to those who do not understand. `,
     ]
   } ,
-  {
-    id: 1,
-    name: "The Union Black",
-    title: "https://res.cloudinary.com/daynclfo8/image/upload/v1767532176/HeadingSubHeading_in8gsf.png",
-    titleSelected: "https://res.cloudinary.com/daynclfo8/image/upload/v1767532207/UBtitle_hhcnx5.png",
-    titleImage: "https://res.cloudinary.com/daynclfo8/image/upload/v1767532163/flag_fai26c.png",
-    subtitle: 'A PERSPECTIVE ON RACE AND IDENTITY',
-    epilogoSelected: "An examination of race, identity and belongin in Britain. Exploring how personal experience intersects with history, perception and social reality.\n\nBy Daniel Mukendi",
-    author:   "Daniel Mbaya Mukendi",
-    slug: "the-union-black",
-    image: "https://res.cloudinary.com/daynclfo8/image/upload/v1767532163/flag_fai26c.png",
-    epilogo: [`"Union Black 2003 is Chris Ofili's red, black and green version of the British 'Union Jack' flag. In it the artist altered the colours of the traditional Union flag so that the red cross of St George is black, the white saltire of St Andrew is green and the red saltire of St Pantrick is black; the background of Ofili's flag is red. His colours derive from the Pan-African tricolour that the American Black nationalist Marcus Garvey suggested for the United Negro Improvement Association political movement of the 1920s."`, 'Tate.org.co.uk'],
-    body: [`
-    For those of us that have reached adulthood having gone through an inebvitable
-    identity crisis, the union black is a comforting sight to behold. It recognises the duality
-    in being of African/Caribbean descent, while spending most of your life in a colonial 
-    country. As children of first-generation immigrants many of us are more familiar with
-    the UK than we are out heritage countries, each aspect of an identity shaped by such
-    a circumstance is to be valued in its own right as there is much to admire about both
-    parts. Naturally by the time we reach adulthood we are equipped with a sensitive
-    awareness of the injustice and difficulties that led our families to seek opportunities
-    elsewhere. In combination with gratitude that acknowledges the opportunities and
-    privilege given to us as a result of living inside of what has been considered a 'first
-    world' country. However, the same hand that feeds us such privilege also delivers us
-    social dynamics that allows us to fe`]}
+  // {
+  //   id: 1,
+  //   name: "The Union Black",
+  //   title: "https://res.cloudinary.com/daynclfo8/image/upload/v1767532176/HeadingSubHeading_in8gsf.png",
+  //   titleSelected: "https://res.cloudinary.com/daynclfo8/image/upload/v1767532207/UBtitle_hhcnx5.png",
+  //   titleImage: "https://res.cloudinary.com/daynclfo8/image/upload/v1767532163/flag_fai26c.png",
+  //   subtitle: 'A PERSPECTIVE ON RACE AND IDENTITY',
+  //   epilogoSelected: "An examination of race, identity and belongin in Britain. Exploring how personal experience intersects with history, perception and social reality.\n\nBy Daniel Mukendi",
+  //   author:   "Daniel Mbaya Mukendi",
+  //   slug: "the-union-black",
+  //   image: "https://res.cloudinary.com/daynclfo8/image/upload/v1767532163/flag_fai26c.png",
+  //   epilogo: [`"Union Black 2003 is Chris Ofili's red, black and green version of the British 'Union Jack' flag. In it the artist altered the colours of the traditional Union flag so that the red cross of St George is black, the white saltire of St Andrew is green and the red saltire of St Pantrick is black; the background of Ofili's flag is red. His colours derive from the Pan-African tricolour that the American Black nationalist Marcus Garvey suggested for the United Negro Improvement Association political movement of the 1920s."`, 'Tate.org.co.uk'],
+  //   body: [`
+  //   For those of us that have reached adulthood having gone through an inebvitable
+  //   identity crisis, the union black is a comforting sight to behold. It recognises the duality
+  //   in being of African/Caribbean descent, while spending most of your life in a colonial 
+  //   country. As children of first-generation immigrants many of us are more familiar with
+  //   the UK than we are out heritage countries, each aspect of an identity shaped by such
+  //   a circumstance is to be valued in its own right as there is much to admire about both
+  //   parts. Naturally by the time we reach adulthood we are equipped with a sensitive
+  //   awareness of the injustice and difficulties that led our families to seek opportunities
+  //   elsewhere. In combination with gratitude that acknowledges the opportunities and
+  //   privilege given to us as a result of living inside of what has been considered a 'first
+  //   world' country. However, the same hand that feeds us such privilege also delivers us
+  //   social dynamics that allows us to fe`]}
 ]
