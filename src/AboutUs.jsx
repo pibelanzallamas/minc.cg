@@ -1,6 +1,4 @@
 import instagramIcon from "./assets/aboutus/instagram.png";
-import descriptionIcon from "./assets/aboutus/description.png";
-import namingIcon from "./assets/aboutus/naming.png";
 import globeIcon from "./assets/aboutus/globe.png";
 
 function AboutUs(){
@@ -24,11 +22,11 @@ function AboutUs(){
         <p>Global Network . Documentation . Distribution . Programming .</p>
       </section>
 
-      <a href="https://www.instagram.com/minc.cg/" target="_blank">
-        <figure className="instagram-link">
-          <img src={instagramIcon} alt="Instagram integration icon" />
-        </figure>
-      </a>
+      <figure className="instagram-link">
+        <a href="https://www.instagram.com/minc.cg/" target="_blank">
+            <img src={instagramIcon} alt="Instagram integration icon" />
+        </a>
+      </figure>
 
     </main>
   )
