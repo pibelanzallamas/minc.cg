@@ -422,15 +422,17 @@ div .article-wrap {
 
 .article-epigrafe {
   text-align: justify;
-  text-align-last: right;
   width: 14rem;
 }
-.article-epigrafe p {
+.article-epigrafe span {
   font-size: 0.5rem;
-  font-weight: 600;
-}
-.article-epigrafe p:first-child {
+  font-weight: 500;
   text-align-last: left;
+  display: block;
+}
+.article-epigrafe span:last-child {
+  margin-top: 0.3rem;
+  text-align-last: right;
 }
 
 .article-body p {
@@ -440,7 +442,7 @@ div .article-wrap {
 
 .arrow-section {
   display: flex;
-  margin-top: 5rem;
+  margin-top: 8rem;
   align-items: center;
   justify-content: center;
   gap: 1.8rem;
