@@ -1,59 +1,117 @@
 import { useParams } from "react-router-dom";
-import {programming} from "../utils/programming"
-import leftArrow from "../assets/programming/leftArrow.png"
-import rightArrow from "../assets/programming/rightArrow.png"
-import { useState } from "react";
+import { programming } from "../utils/programming";
+import leftArrow from "../assets/programming/leftArrow.png";
+import rightArrow from "../assets/programming/rightArrow.png";
+import { useState, useEffect, useMemo } from "react";
 
-function ArticleCard(){
-  const {slug} = useParams();
+function ArticleCard() {
+  const { slug } = useParams();
   const article = programming.find(p => p.slug === slug);
-  const [actualPage, setActualPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(3);
+  
+  // Estado para la paginación
+  const [currentPage, setCurrentPage] = useState(1);
+  const paragraphsPerPage = 4; // 4 párrafos por página
+  
+  // Calcular total de páginas basado en los párrafos
+  const totalPages = useMemo(() => {
+    if (!article) return 1;
+    return Math.ceil(article.body.length / paragraphsPerPage);
+  }, [article]);
+  
+  // Calcular qué párrafos mostrar en la página actual
+  const paragraphsToShow = useMemo(() => {
+    if (!article) return [];
+    
+    const startIndex = (currentPage - 1) * paragraphsPerPage;
+    const endIndex = startIndex + paragraphsPerPage;
+    
+    return article.body.slice(startIndex, endIndex);
+  }, [article, currentPage]);
+  
+  // Resetear a página 1 cuando cambia el artículo
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [slug]);
+  
+  // Funciones para navegación
+  const goToNextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+      // Opcional: scroll al inicio del artículo
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+  
+  const goToPrevPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
 
-  if(!article) return <p className="article-not-found simple-text">Article not found.</p>;
+  if (!article) return <p className="article-not-found simple-text">Article not found.</p>;
 
-  return(
+  return (
     <article className="article" key={article.id}>
+      {/* title */}
       <figure className="article-title">
-        <img src={article.title} alt={`article title for ${article.name}`}/>
+        <img src={article.title} alt={`article title for ${article.name}`} />
       </figure>
 
+      {/* copete */}
       <section className="article-copete">
         <figure className="article-image">
           <img src={article.image} alt="article-image" />
         </figure>
         
-        <p className="article-epigrafe simple-text">{article.epilogo.map(e =>(
-          <>
-            <p>{e}</p>
-            <br/>
-          </>
-        ))}</p>
+        <p className="article-epigrafe simple-text">
+          {article.epilogo.map((e, index) => (
+            <span key={index}>
+              {e}
+              <br />
+            </span>
+          ))}
+        </p>
       </section>
 
+      {/* cuerpo - SOLO 4 párrafos por página */}
       <section className="article-body simple-text">
-        {article.body.map((p,i)=>(
-          <div key={`parrafo index ${i}`}>
-          <p>{p}</p>
-          <br/>
-          </div>
-        ))}
+        {paragraphsToShow.map((paragraph, index) => {
+          // Calcular el índice real en el array original
+          const realIndex = (currentPage - 1) * paragraphsPerPage + index;
+          
+          return (
+            <div key={`parrafo-${realIndex}`}>
+              <p>{paragraph}</p>
+              <br />
+            </div>
+          );
+        })}
       </section>
 
-      <section className="arrow-section"> 
-        <figure onClick={() => setActualPage(actualPage - 1)} 
-        className={actualPage == 1 ? "disabled"  :"article-arrow"}>
-          <img src={leftArrow} alt="" />
-        </figure>
-        <p className="simple-text">Page {actualPage} of {totalPages}</p>
+      {/* Navegación de páginas */}
+      <section className="arrow-section">
         <figure 
-        onClick={() => setActualPage(actualPage + 1)} 
-        className={actualPage == totalPages ? "disabled"  :"article-arrow"}>
-          <img src={rightArrow} alt="" />
+          onClick={goToPrevPage}
+          className={currentPage === 1 ? "disabled" : "article-arrow"}
+        >
+          <img src={leftArrow} alt="Previous page" />
+        </figure>
+        
+        <p className="simple-text">
+          Página {currentPage} de {totalPages}
+        </p>
+        
+        <figure 
+          onClick={goToNextPage}
+          className={currentPage === totalPages ? "disabled" : "article-arrow"}
+        >
+          <img src={rightArrow} alt="Next page" />
         </figure>
       </section>
+
     </article>
-  )
+  );
 }
 
 export default ArticleCard;
