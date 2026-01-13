@@ -19,17 +19,19 @@ function Programming(){
         <img src={globe} loading="lazy" alt="globe-icon"x/>
       </figure>
 
-      <div className="articles-grid">
+      <div className="articles-menu-grid">
         {programming.map(e =>(
-          <div className="one-article-button" key={e.id}>
+          <div className="aricles-menu-one-option" key={e.id}>
             <figure className="article-image-select">
               <img src={e.image} alt="union-black-flag" />
             </figure> 
+
             <Link key={e.id} to={`/programming/${e.slug}`}>
               <figure className="article-title-select">
                 <img src={e.titleSelected} alt="union-black-flag" />
               </figure> 
             </Link>
+            
             <div className="simple-text article-description-select">{
               e.epilogoSelected.split("\n\n").map((paragraph, index) => 
               (<>
