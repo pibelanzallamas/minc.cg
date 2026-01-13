@@ -390,7 +390,7 @@ div .article-wrap {
 }
 
 .article {
-  padding: 3rem;
+  padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -402,7 +402,7 @@ div .article-wrap {
 }
 
 .article-title {
-  width: 11rem;
+  width: 14rem;
 }
 
 .article-copete {
@@ -434,12 +434,13 @@ div .article-wrap {
 }
 
 .article-body p {
+  font-weight: 600;
   font-size: 0.6rem;
 }
 
 .arrow-section {
   display: flex;
-  margin-top: 8rem;
+  margin-top: 5rem;
   align-items: center;
   justify-content: center;
   gap: 1.8rem;
@@ -673,76 +674,6 @@ div .article-wrap {
   margin-top: 2rem;
   width: 5rem;
   margin-right: 0;
-}
-
-.article {
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.article-not-found {
-  margin: 2rem auto;
-  font-size: 1rem;
-}
-
-.article-title {
-  width: 11rem;
-}
-
-.article-copete {
-  margin-top: 2.5rem;
-  display: flex;
-  width: 100%;
-  height: 10rem;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.article-image {
-  margin-top: 0.7rem;
-  width: 5rem;
-  aspect-ratio: 777/481;
-}
-
-.article-epigrafe {
-  text-align: justify;
-  text-align-last: right;
-  width: 14rem;
-}
-.article-epigrafe p {
-  font-size: 0.5rem;
-  font-weight: 600;
-}
-.article-epigrafe p:first-child {
-  text-align-last: left;
-}
-
-.article-body p {
-  font-size: 0.6rem;
-}
-
-.arrow-section {
-  display: flex;
-  margin-top: 8rem;
-  align-items: center;
-  justify-content: center;
-  gap: 1.8rem;
-}
-.arrow-section p {
-  font-size: 0.8rem;
-}
-
-.article-arrow {
-  width: 1rem;
-  cursor: pointer;
-}
-
-.disabled {
-  width: 1rem;
-  visibility: hidden;
-  pointer-events: none;
 }
 
 * {
