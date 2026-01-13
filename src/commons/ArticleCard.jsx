@@ -37,16 +37,20 @@ function ArticleCard() {
   const goToNextPage = () => {
     if (currentPage < totalPages) {
       setCurrentPage(currentPage + 1);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      // window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
   
   const goToPrevPage = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      // window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
+
+  useEffect(() => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }, [slug]);
 
   if (!article) return <p className="article-not-found simple-text">Article not found.</p>;
 
