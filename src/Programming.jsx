@@ -21,7 +21,7 @@ function Programming(){
 
       <div className="articles-grid">
         {programming.map(e =>(
-          <div className="one-article-button">
+          <div className="one-article-button" key={e.id}>
             <figure className="article-image-select">
               <img src={e.image} alt="union-black-flag" />
             </figure> 

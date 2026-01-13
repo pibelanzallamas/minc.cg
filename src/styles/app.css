@@ -350,6 +350,10 @@ footer {
   width: 2.5rem;
 }
 
+div .article-wrap {
+  background-size: contain;
+}
+
 .articles-grid {
   margin-top: 5rem;
   display: grid;
@@ -693,11 +697,9 @@ img {
   flex-direction: column;
   min-height: 100dvh;
   overflow: hidden;
-  background-image: url("../assets/bg/websiteBackgroundResize.jpg");
+  background-image: url("../assets/bg/webBackgroundRework.webp");
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
 }
 
 .content-page {

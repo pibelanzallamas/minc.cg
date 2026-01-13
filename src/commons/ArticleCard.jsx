@@ -13,7 +13,7 @@ function ArticleCard(){
   if(!article) return <p className="article-not-found simple-text">Article not found.</p>;
 
   return(
-    <article className="article">
+    <article className="article" key={article.id}>
       <figure className="article-title">
         <img src={article.title} alt={`article title for ${article.name}`}/>
       </figure>
