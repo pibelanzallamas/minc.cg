@@ -37,7 +37,6 @@ function ArticleCard() {
   const goToNextPage = () => {
     if (currentPage < totalPages) {
       setCurrentPage(currentPage + 1);
-      // Opcional: scroll al inicio del artículo
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
