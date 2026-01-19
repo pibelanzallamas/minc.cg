@@ -414,7 +414,7 @@ footer {
   width: 14rem;
 }
 .article-epigrafe span {
-  font-size: 0.5rem;
+  font-size: 0.55rem;
   font-weight: 500;
   text-align-last: left;
   display: block;
@@ -425,8 +425,7 @@ footer {
 }
 
 .article-body p {
-  font-weight: 600;
-  font-size: 0.6rem;
+  font-size: 0.65rem;
 }
 
 .arrow-section {
