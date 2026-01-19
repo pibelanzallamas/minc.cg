@@ -527,21 +527,19 @@ footer {
 }
 
 .market-div {
+  margin-top: 1rem;
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 1.3rem;
 }
 
 .market {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.6rem;
   width: 100%;
   margin-bottom: 0.2rem;
-  margin-left: 1rem;
-  padding: 1rem;
   row-gap: 2.5rem;
-  column-gap: 3rem;
 }
 
 .item-card {
@@ -549,6 +547,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   color: white;
   font-family: "Arial";
   font-size: 0.5rem;
@@ -556,7 +555,6 @@ footer {
 }
 
 .item-image {
-  align-self: flex-start;
   height: 6rem;
   aspect-ratio: 513/665;
 }
@@ -570,19 +568,15 @@ footer {
 .item-size-price {
   margin-top: 0.3rem;
   display: flex;
-  justify-content: space-between;
+  font-family: VCR OSD Mono;
+  color: #FEF001;
   width: 4.75rem;
+  justify-content: space-between;
 }
 
 .raffle-ticket {
-  font-family: VCR OSD Mono;
-  color: #FEF001;
+  letter-spacing: -0.04em;
   font-size: 0.46rem;
-}
-
-.item-price {
-  font-family: VCR OSD Mono;
-  color: #FEF001;
 }
 
 .about-us.add-to-cart {
