@@ -343,11 +343,13 @@ footer {
 .programming-description {
   margin-top: 0.7rem;
   width: 16rem;
+  aspect-ratio: 2895/1441;
 }
 
 .programming-image {
   margin-top: 0.7rem;
-  width: 2.5rem;
+  width: 3rem;
+  aspect-ratio: 1/1;
 }
 
 .articles-menu-grid {
@@ -527,7 +529,7 @@ footer {
 }
 
 .market-div {
-  margin-top: 1rem;
+  margin-top: 1.3rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -726,6 +728,7 @@ footer {
     padding: 0;
     width: 30rem;
     margin: 0 auto;
+    margin-top: 1rem;
   }
   .aboutus-world {
     margin-top: 0rem;
@@ -735,7 +738,7 @@ footer {
   .simple-text.about-us-services {
     margin: 0 auto;
     margin-top: 2rem;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
   .instagram-link {
     margin: 0 auto;
