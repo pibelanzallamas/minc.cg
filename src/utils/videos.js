@@ -31,7 +31,7 @@ export const videos = [
   {
     image: img3,
     title: tit3,
-    desc: "The positive outcomes of sensory sensitivy with a focus on the visually orientated.",
+    desc: "The positive outcomes of sensory sensitivity with a focus on the visually orientated.",
     link: "https://www.youtube.com/watch?v=kkZh-s0jWPs"
   },
   {
