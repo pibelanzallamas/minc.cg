@@ -102,7 +102,7 @@ function ArticleCard() {
         </figure>
         
         <p className="simple-text">
-          Página {currentPage} de {totalPages}
+          Page {currentPage} of {totalPages}
         </p>
         
         <figure 
