@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import {programming} from "./utils/programming"
 import programTitle from "./assets/programming/programTitle.png"
-import introProgam from "./assets/programming/BoxNewVersion.webp"
+import introProgam from "./assets/programming/BoxNewVersion.png"
 import globe from "./assets/programming/globe.webp"
 
 function Programming(){
