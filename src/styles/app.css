@@ -393,6 +393,7 @@ footer {
 
 .article-title {
   width: 14rem;
+  aspect-ratio: 1440/322;
 }
 
 .article-copete {
