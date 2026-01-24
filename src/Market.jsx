@@ -8,6 +8,7 @@ import axios from 'axios'
 
 function Market(){
   const [allProducts, setAllProducts] = useState([]);
+  const [waiting, setWaiting] = useState(true);
   
   useEffect(() => {
     const fetchProducts = async () => {
@@ -16,6 +17,7 @@ function Market(){
           "https://minc-cg-back.onrender.com/products"
         );
         setAllProducts(res.data);
+        setWaiting(false)
       } catch (error) {
         console.error("Error fetching products:", error);
       }
@@ -40,7 +42,8 @@ function Market(){
           </figure>
         </Link>
       </section>
-
+      {waiting ? 
+        <p className='simple-text waiting-msg'>Loading please wait...</p>  :
       <div className='market-div'>
         <section className="market">
           {allProducts.length > 0 && allProducts.map((e)=>(
@@ -48,6 +51,7 @@ function Market(){
           ))}
         </section>
       </div>
+      }
     </main>
   )
 
