@@ -26,7 +26,7 @@ The result is a modern, scalable, and user-friendly website built with best prac
 ## 🧩 Technologies Used
 
 - **React**
-- **Sass (SCSS)**
+- **Sass**
 - **HTML5**
 - **Vite**
 - **ESLint**
