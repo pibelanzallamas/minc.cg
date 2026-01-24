@@ -689,7 +689,7 @@ footer {
 .aboutus-world {
   margin: 0 auto;
   margin-top: 4rem;
-  width: 4.5rem;
+  width: 4rem;
   aspect-ratio: 1/1;
   margin-bottom: 1rem;
 }
@@ -711,8 +711,19 @@ footer {
   gap: 0.3rem;
 }
 
-.simple-text.about-us-services {
+.about-us-page__naming {
+  width: 15rem;
+  aspect-ratio: 2485/488;
+}
+
+.about-us-page__description {
+  margin: 0 auto;
   margin-top: 2rem;
+  width: 20rem;
+  aspect-ratio: 3281/267;
+}
+
+.simple-text.about-us-services {
   font-size: 0.65rem;
   line-height: 1.3rem;
   text-align: center;

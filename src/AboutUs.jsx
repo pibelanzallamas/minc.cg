@@ -1,5 +1,7 @@
 import instagramIcon from "./assets/aboutus/instagram.png";
 import globeIcon from "./assets/aboutus/globe.png";
+import description from "./assets/aboutus/descriptionFixed.png"
+import naming from "./assets/aboutus/namingFixed.png"
 
 function AboutUs(){
   return (
@@ -7,7 +9,7 @@ function AboutUs(){
       <figure className="aboutus-world">
         <img src={globeIcon} loading="lazy" alt="Global reach icon" />
       </figure>
-
+{/* 
       <section className="simple-text about-us-credits">
         <p><span className="yellow">Name: </span> 
         <span className="minc-title">CGC MINC</span></p>
@@ -20,7 +22,15 @@ function AboutUs(){
       <section className="simple-text about-us-services">
         <p>Art & Design Studio . Observatory . Science Facility . Social Research Institute </p>
         <p>Global Network . Documentation . Distribution . Programming .</p>
-      </section>
+      </section> */}
+
+      <figure className="about-us-page__naming">
+        <img src={naming} alt="naming-of-creator"></img>
+      </figure>
+
+      <figure className="about-us-page__description">
+        <img src={description} alt="description-about-us"></img>
+      </figure>
 
       <figure className="instagram-link">
         <a href="https://www.instagram.com/minc.cg/" target="_blank">
