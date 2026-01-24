@@ -20,7 +20,7 @@
 }
 
 .navbar-logotipo {
-  height: 3rem;
+  height: 3.4rem;
   aspect-ratio: 296/150;
 }
 
@@ -31,7 +31,7 @@
   cursor: pointer;
 }
 .menu-mobile-button img {
-  width: 5rem;
+  width: 4.5rem;
 }
 
 .menu-mobile-button > * {
@@ -712,15 +712,16 @@ footer {
 }
 
 .about-us-page__naming {
-  width: 15rem;
+  margin-top: 1rem;
+  width: 16.2rem;
   aspect-ratio: 2485/488;
 }
 
 .about-us-page__description {
   margin: 0 auto;
-  margin-top: 2rem;
-  width: 20rem;
+  margin-top: 1.2rem;
   aspect-ratio: 3281/267;
+  width: 22.5rem;
 }
 
 .simple-text.about-us-services {
@@ -730,8 +731,8 @@ footer {
 }
 
 .instagram-link {
-  margin-top: 2rem;
-  width: 5rem;
+  margin-top: 1.7rem;
+  width: 4.6rem;
   margin-right: 0;
 }
 
