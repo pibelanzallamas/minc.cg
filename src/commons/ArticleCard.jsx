@@ -10,7 +10,7 @@ function ArticleCard() {
   
   // Estado para la paginación
   const [currentPage, setCurrentPage] = useState(1);
-  const paragraphsPerPage = 4; // 4 párrafos por página
+  const paragraphsPerPage = 5; // 4 párrafos por página
   
   // Calcular total de páginas basado en los párrafos
   const totalPages = useMemo(() => {
