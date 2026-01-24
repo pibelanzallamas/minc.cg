@@ -1,4 +1,4 @@
-import greetingsMsg from "./assets/home/greetings.webp"
+import greetingsMsg from "./assets/home/greetings2.webp"
 import bar from "./assets/home/whiteBar@300x.webp"
 import leftCharacter from "./assets/home/characterLeft.webp"
 import rightCharacter from "./assets/home/characterRight.webp"

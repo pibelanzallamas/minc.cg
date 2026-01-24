@@ -1,20 +1,24 @@
 import nikeShoe from "../assets/videos/MT_shoe@300x.png"
 
 function VideoCard({videoData}){
+
   return(
-    <div className="video-card-box">
-      <figure className="image-video">
-        <img src={videoData.image}/>
-        {videoData.link=="https://www.youtube.com/watch?v=mKruZdXavMk"? <div className="zapatito">  <img src={nikeShoe}/> </div>:<></>}
+    <div className="video-card">
+      <figure className="video-card__image">
+        <img src={videoData.image} />
+        {videoData.link=="https://www.youtube.com/watch?v=mKruZdXavMk"
+        ? <div className="zapatito">
+          <img src={nikeShoe}/></div>
+        :<></>}
       </figure>
       
-      <figure className="title-video">
+      <figure className={videoData.doubleLine ? "video-card__title--double" : "video-card__title"}>
         <a href={videoData.link} target="_blank">
           <img src={videoData.title}/>
         </a>
       </figure>
 
-      <div className="text-video">
+      <div className="video-card__desc">
         <p>{videoData.desc}</p>
       </div>
     </div>

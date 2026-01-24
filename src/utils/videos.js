@@ -19,42 +19,56 @@ export const videos = [
   {
     image: img1,
     title: tit1,
+    doubleLine: true,
+    name: "",
     desc: "A visualiser for musician by the name kisito.",
     link: "https://www.youtube.com/watch?v=QHRHf0qTFfU"
   },
   {
     image: img2,
     title: tit2,
+    doubleLine: false,
+    name: "",
     desc: "A curated media collection.",
     link: "https://www.youtube.com/watch?v=mKruZdXavMk"
   },
   {
     image: img3,
     title: tit3,
+    doubleLine: false,
+    name: "",
     desc: "The positive outcomes of sensory sensitivity with a focus on the visually orientated.",
     link: "https://www.youtube.com/watch?v=kkZh-s0jWPs"
   },
   {
     image: img4,
     title: tit4,
+    doubleLine: false,
+    name: "",
     desc: "The importance of shared information and it's impact on humanity on an individual and global scale.",
     link: "https://www.youtube.com/watch?v=Zu_-DoPFFuU"
   },
   {
     image: img5,
     title: tit5,
+    doubleLine: false,
+    name: "",
     desc: "God Bless.",
     link: "https://www.youtube.com/watch?v=0yiRYy-h-Bs"
   },
   {
     image: img6,
     title: tit6,
+    doubleLine: true,
+    name: "",
     desc: "The mind (software) / The body (hardware).",
     link: "https://www.youtube.com/watch?v=HduwPC2gnWQ"
   },
   {
     image: img7,
     title: tit7,
+    doubleLine: false,
+    name: "",
     desc: "Artifacts produced by humanity.",
     link: "https://www.youtube.com/watch?v=hHph-RUWexQ"
   },
