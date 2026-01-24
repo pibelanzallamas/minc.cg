@@ -303,6 +303,10 @@ footer {
   width: 7rem;
   height: 2rem;
 }
+.title-video img {
+  object-fit: contain;
+}
+
 .video-card-box p {
   font-family: "Arial";
   font-size: 0.5rem;
